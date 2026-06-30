@@ -1,6 +1,125 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "carpeted-mod:block/brick_stairs_white"
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_white"
+        },
+        "when": "white"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_orange"
+        },
+        "when": "orange"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_magenta"
+        },
+        "when": "magenta"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_light_blue"
+        },
+        "when": "light_blue"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_yellow"
+        },
+        "when": "yellow"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_lime"
+        },
+        "when": "lime"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_pink"
+        },
+        "when": "pink"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_gray"
+        },
+        "when": "gray"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_light_gray"
+        },
+        "when": "light_gray"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_cyan"
+        },
+        "when": "cyan"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_purple"
+        },
+        "when": "purple"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_blue"
+        },
+        "when": "blue"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_brown"
+        },
+        "when": "brown"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_green"
+        },
+        "when": "green"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_red"
+        },
+        "when": "red"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/brick_stairs_black"
+        },
+        "when": "black"
+      }
+    ],
+    "component": "minecraft:dye",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "carpeted-mod:block/brick_stairs_white"
+    },
+    "property": "minecraft:component"
   }
 }

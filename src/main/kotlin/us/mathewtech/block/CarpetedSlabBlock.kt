@@ -11,9 +11,11 @@ import net.minecraft.world.level.block.state.StateDefinition
 import net.minecraft.world.level.block.state.properties.EnumProperty
 import net.minecraft.world.level.block.state.properties.SlabType
 import net.minecraft.world.level.storage.loot.LootParams
+import net.minecraft.world.level.LevelReader
 import net.minecraft.world.phys.shapes.CollisionContext
-import net.minecraft.world.phys.shapes.Shapes
 import net.minecraft.world.phys.shapes.VoxelShape
+import us.mathewtech.item.CarpetedItemStacks
+import us.mathewtech.util.CarpetedDropUtil
 
 class CarpetedSlabBlock(
     override val baseBlock: Block,
@@ -59,6 +61,10 @@ class CarpetedSlabBlock(
     }
 
     override fun getDrops(state: BlockState, params: LootParams.Builder): List<ItemStack> {
-        return listOf(ItemStack(baseBlock.asItem()), ItemStack(getCarpetItemFromState(state)))
+        return CarpetedDropUtil.drops(this, this, params)
+    }
+
+    override fun getCloneItemStack(level: LevelReader, pos: BlockPos, state: BlockState, includeData: Boolean): ItemStack {
+        return CarpetedItemStacks.create(this, getCarpetColorFromState(state), getCarpetSurfaceFromState(state))
     }
 }

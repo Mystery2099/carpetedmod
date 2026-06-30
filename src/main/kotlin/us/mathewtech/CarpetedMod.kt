@@ -5,6 +5,7 @@ import net.minecraft.resources.Identifier
 import org.slf4j.LoggerFactory
 import us.mathewtech.interaction.CarpetInteractionHandler
 import us.mathewtech.registry.ModBlocks
+import us.mathewtech.registry.ModDataComponents
 
 object CarpetedMod : ModInitializer {
 	const val MOD_ID: String = "carpeted-mod"
@@ -12,6 +13,7 @@ object CarpetedMod : ModInitializer {
 	private val LOGGER = LoggerFactory.getLogger(MOD_ID)
 
 	override fun onInitialize() {
+		ModDataComponents.initialize()
 		ModBlocks.initialize()
 		CarpetInteractionHandler.initialize()
 		LOGGER.info("Initialized carpeted blocks")

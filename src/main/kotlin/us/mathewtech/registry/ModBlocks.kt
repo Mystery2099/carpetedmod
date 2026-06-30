@@ -5,7 +5,6 @@ import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.core.registries.Registries
 import net.minecraft.resources.Identifier
 import net.minecraft.resources.ResourceKey
-import net.minecraft.world.item.BlockItem
 import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
@@ -15,6 +14,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour
 import us.mathewtech.CarpetedMod
 import us.mathewtech.block.CarpetedSlabBlock
 import us.mathewtech.block.CarpetedStairBlock
+import us.mathewtech.item.CarpetedBlockItem
 
 object ModBlocks {
     private val mutableSlabsByBase = linkedMapOf<SlabBlock, CarpetedSlabBlock>()
@@ -80,7 +80,7 @@ object ModBlocks {
 
         if (shouldRegisterItem) {
             val itemKey: ResourceKey<Item> = keyOfItem(name)
-            val blockItem = BlockItem(block, Item.Properties().setId(itemKey).useBlockDescriptionPrefix())
+            val blockItem = CarpetedBlockItem(block, Item.Properties().setId(itemKey).useBlockDescriptionPrefix())
             Registry.register(BuiltInRegistries.ITEM, itemKey, blockItem)
         }
 

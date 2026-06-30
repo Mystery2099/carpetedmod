@@ -1,0 +1,36 @@
+package us.mathewtech.util
+
+import net.minecraft.core.component.DataComponents
+import net.minecraft.world.item.ItemStack
+import net.minecraft.world.item.enchantment.Enchantments
+import net.minecraft.world.item.enchantment.ItemEnchantments
+import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.storage.loot.LootParams
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams
+import us.mathewtech.block.CarpetedBlock
+import us.mathewtech.item.CarpetedItemStacks
+
+object CarpetedDropUtil {
+    fun drops(block: Block, carpeted: CarpetedBlock, params: LootParams.Builder): List<ItemStack> {
+        val state = params.getParameter(LootContextParams.BLOCK_STATE)
+
+        if (hasSilkTouch(params)) {
+            return listOf(
+                CarpetedItemStacks.create(
+                    block,
+                    carpeted.getCarpetColorFromState(state),
+                    carpeted.getCarpetSurfaceFromState(state)
+                )
+            )
+        }
+
+        return listOf(ItemStack(carpeted.baseBlock.asItem()), ItemStack(carpeted.getCarpetItemFromState(state)))
+    }
+
+    private fun hasSilkTouch(params: LootParams.Builder): Boolean {
+        val tool = params.getParameter(LootContextParams.TOOL)
+        return tool.getOrDefault(DataComponents.ENCHANTMENTS, ItemEnchantments.EMPTY)
+            .entrySet()
+            .any { entry -> entry.key.`is`(Enchantments.SILK_TOUCH) && entry.intValue > 0 }
+    }
+}

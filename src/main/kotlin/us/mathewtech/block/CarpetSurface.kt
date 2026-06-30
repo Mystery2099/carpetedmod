@@ -1,5 +1,6 @@
 package us.mathewtech.block
 
+import com.mojang.serialization.Codec
 import net.minecraft.util.StringRepresentable
 
 enum class CarpetSurface(private val serializedName: String) : StringRepresentable {
@@ -13,5 +14,9 @@ enum class CarpetSurface(private val serializedName: String) : StringRepresentab
 
     override fun getSerializedName(): String {
         return serializedName
+    }
+
+    companion object {
+        val CODEC: Codec<CarpetSurface> = StringRepresentable.fromEnum(CarpetSurface::values)
     }
 }

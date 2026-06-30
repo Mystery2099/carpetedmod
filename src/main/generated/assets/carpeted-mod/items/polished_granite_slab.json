@@ -1,6 +1,125 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "carpeted-mod:block/polished_granite_slab_white"
+    "type": "minecraft:select",
+    "cases": [
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_white"
+        },
+        "when": "white"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_orange"
+        },
+        "when": "orange"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_magenta"
+        },
+        "when": "magenta"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_light_blue"
+        },
+        "when": "light_blue"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_yellow"
+        },
+        "when": "yellow"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_lime"
+        },
+        "when": "lime"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_pink"
+        },
+        "when": "pink"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_gray"
+        },
+        "when": "gray"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_light_gray"
+        },
+        "when": "light_gray"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_cyan"
+        },
+        "when": "cyan"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_purple"
+        },
+        "when": "purple"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_blue"
+        },
+        "when": "blue"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_brown"
+        },
+        "when": "brown"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_green"
+        },
+        "when": "green"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_red"
+        },
+        "when": "red"
+      },
+      {
+        "model": {
+          "type": "minecraft:model",
+          "model": "carpeted-mod:block/polished_granite_slab_black"
+        },
+        "when": "black"
+      }
+    ],
+    "component": "minecraft:dye",
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "carpeted-mod:block/polished_granite_slab_white"
+    },
+    "property": "minecraft:component"
   }
 }

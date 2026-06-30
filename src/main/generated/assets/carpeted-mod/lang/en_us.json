@@ -90,5 +90,6 @@
   "block.carpeted-mod.stone_brick_slab": "Carpeted Stone Brick Slab",
   "block.carpeted-mod.stone_brick_stairs": "Carpeted Stone Brick Stairs",
   "block.carpeted-mod.stone_slab": "Carpeted Stone Slab",
-  "block.carpeted-mod.stone_stairs": "Carpeted Stone Stairs"
+  "block.carpeted-mod.stone_stairs": "Carpeted Stone Stairs",
+  "item.carpeted-mod.carpeted_block": "%s Carpeted %s"
 }

@@ -13,7 +13,9 @@ import net.minecraft.client.data.models.model.ItemModelUtils
 import net.minecraft.client.data.models.model.ModelTemplate
 import net.minecraft.client.data.models.model.TextureMapping
 import net.minecraft.client.data.models.model.TextureSlot
+import net.minecraft.client.renderer.item.properties.select.ComponentContents
 import net.minecraft.client.resources.model.sprite.Material
+import net.minecraft.core.component.DataComponents
 import net.minecraft.core.Direction
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.resources.Identifier
@@ -44,13 +46,21 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
 
     override fun generateItemModels(itemModelGenerators: ItemModelGenerators) {
         ModBlocks.slabsByBase.values.forEach { block ->
-            itemModelGenerators.itemModelOutput.accept(block.asItem(), ItemModelUtils.plainModel(modelId(block, "white")))
+            itemModelGenerators.itemModelOutput.accept(block.asItem(), colorSelectingItemModel(block))
         }
 
         ModBlocks.stairsByBase.values.forEach { block ->
-            itemModelGenerators.itemModelOutput.accept(block.asItem(), ItemModelUtils.plainModel(modelId(block, "white")))
+            itemModelGenerators.itemModelOutput.accept(block.asItem(), colorSelectingItemModel(block))
         }
     }
+
+    private fun colorSelectingItemModel(block: Block) = ItemModelUtils.select(
+        ComponentContents(DataComponents.DYE),
+        ItemModelUtils.plainModel(modelId(block, "white")),
+        DyeColor.entries.map { color ->
+            ItemModelUtils.`when`(color, ItemModelUtils.plainModel(modelId(block, color.getName())))
+        }
+    )
 
     private fun createSlabModels(generators: BlockModelGenerators, base: SlabBlock, block: CarpetedSlabBlock) {
         val bottomByColor = DyeColor.entries.associateWith { color ->

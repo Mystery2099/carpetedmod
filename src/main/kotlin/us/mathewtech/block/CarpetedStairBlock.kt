@@ -6,6 +6,7 @@ import net.minecraft.core.Direction
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.level.BlockGetter
+import net.minecraft.world.level.LevelReader
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.StairBlock
 import net.minecraft.world.level.block.state.BlockState
@@ -17,6 +18,8 @@ import net.minecraft.world.level.storage.loot.LootParams
 import net.minecraft.world.phys.shapes.CollisionContext
 import net.minecraft.world.phys.shapes.Shapes
 import net.minecraft.world.phys.shapes.VoxelShape
+import us.mathewtech.item.CarpetedItemStacks
+import us.mathewtech.util.CarpetedDropUtil
 
 class CarpetedStairBlock(
     override val baseBlock: StairBlock,
@@ -75,7 +78,11 @@ class CarpetedStairBlock(
     }
 
     override fun getDrops(state: BlockState, params: LootParams.Builder): List<ItemStack> {
-        return listOf(ItemStack(baseBlock.asItem()), ItemStack(getCarpetItemFromState(state)))
+        return CarpetedDropUtil.drops(this, this, params)
+    }
+
+    override fun getCloneItemStack(level: LevelReader, pos: BlockPos, state: BlockState, includeData: Boolean): ItemStack {
+        return CarpetedItemStacks.create(this, getCarpetColorFromState(state), getCarpetSurfaceFromState(state))
     }
 
     private fun carpetShape(state: BlockState): VoxelShape {
