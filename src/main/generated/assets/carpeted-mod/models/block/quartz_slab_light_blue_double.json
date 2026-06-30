@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/double_carpeted_slab",
+  "textures": {
+    "bottom": "minecraft:block/quartz_slab_bottom",
+    "carpet": "minecraft:block/light_blue_carpet",
+    "side": "minecraft:block/quartz_slab_side",
+    "top": "minecraft:block/quartz_slab_top"
+  }
+}

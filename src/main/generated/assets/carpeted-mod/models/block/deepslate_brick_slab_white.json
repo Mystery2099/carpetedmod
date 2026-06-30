@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/carpeted_slab",
+  "textures": {
+    "bottom": "minecraft:block/deepslate_brick_slab_bottom",
+    "carpet": "minecraft:block/white_carpet",
+    "side": "minecraft:block/deepslate_brick_slab_side",
+    "top": "minecraft:block/deepslate_brick_slab_top"
+  }
+}

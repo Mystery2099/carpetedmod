@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/outer_carpeted_stairs",
+  "textures": {
+    "bottom": "minecraft:block/smooth_quartz_stairs_bottom",
+    "carpet": "minecraft:block/black_carpet",
+    "side": "minecraft:block/smooth_quartz_stairs_side",
+    "top": "minecraft:block/smooth_quartz_stairs_top"
+  }
+}

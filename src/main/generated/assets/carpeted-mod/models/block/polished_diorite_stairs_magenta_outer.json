@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/outer_carpeted_stairs",
+  "textures": {
+    "bottom": "minecraft:block/polished_diorite_stairs_bottom",
+    "carpet": "minecraft:block/magenta_carpet",
+    "side": "minecraft:block/polished_diorite_stairs_side",
+    "top": "minecraft:block/polished_diorite_stairs_top"
+  }
+}

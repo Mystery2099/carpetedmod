@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/double_carpeted_slab",
+  "textures": {
+    "bottom": "minecraft:block/cobblestone_slab_bottom",
+    "carpet": "minecraft:block/yellow_carpet",
+    "side": "minecraft:block/cobblestone_slab_side",
+    "top": "minecraft:block/cobblestone_slab_top"
+  }
+}

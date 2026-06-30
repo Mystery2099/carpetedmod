@@ -1,0 +1,3364 @@
+{
+  "variants": {
+    "carpet=black,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=black,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true
+    },
+    "carpet=black,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=black,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true
+    },
+    "carpet=black,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_black",
+      "uvlock": true
+    },
+    "carpet=black,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=black,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=black,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=black,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=black,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_black",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=black,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=black,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=black,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=black,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=black,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_black",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=black,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=black,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=black,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=black,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=black,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_black",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=black,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true
+    },
+    "carpet=black,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=black,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true
+    },
+    "carpet=black,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=black,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_black",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=black,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=black,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=black,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=black,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=black,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_black",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=black,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=black,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=black,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=black,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=black,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_black",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=black,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=black,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=black,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=black,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_black_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=black,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_black",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=blue,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=blue,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true
+    },
+    "carpet=blue,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=blue,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true
+    },
+    "carpet=blue,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue",
+      "uvlock": true
+    },
+    "carpet=blue,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=blue,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=blue,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=blue,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=blue,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=blue,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=blue,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=blue,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=blue,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=blue,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=blue,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=blue,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=blue,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=blue,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=blue,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=blue,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true
+    },
+    "carpet=blue,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=blue,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true
+    },
+    "carpet=blue,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=blue,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=blue,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=blue,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=blue,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=blue,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=blue,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=blue,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=blue,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=blue,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=blue,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=blue,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=blue,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=blue,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=blue,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=blue,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=blue,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_blue",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=brown,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=brown,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true
+    },
+    "carpet=brown,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=brown,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true
+    },
+    "carpet=brown,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown",
+      "uvlock": true
+    },
+    "carpet=brown,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=brown,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=brown,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=brown,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=brown,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=brown,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=brown,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=brown,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=brown,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=brown,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=brown,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=brown,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=brown,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=brown,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=brown,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=brown,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true
+    },
+    "carpet=brown,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=brown,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true
+    },
+    "carpet=brown,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=brown,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=brown,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=brown,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=brown,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=brown,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=brown,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=brown,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=brown,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=brown,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=brown,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=brown,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=brown,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=brown,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=brown,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=brown,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=brown,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_brown",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=cyan,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=cyan,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true
+    },
+    "carpet=cyan,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=cyan,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true
+    },
+    "carpet=cyan,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan",
+      "uvlock": true
+    },
+    "carpet=cyan,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=cyan,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=cyan,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=cyan,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=cyan,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=cyan,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=cyan,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=cyan,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=cyan,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=cyan,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=cyan,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=cyan,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=cyan,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=cyan,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=cyan,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=cyan,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true
+    },
+    "carpet=cyan,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=cyan,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true
+    },
+    "carpet=cyan,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=cyan,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=cyan,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=cyan,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=cyan,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=cyan,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=cyan,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=cyan,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=cyan,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=cyan,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=cyan,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=cyan,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=cyan,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=cyan,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=cyan,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=cyan,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=cyan,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_cyan",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=gray,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=gray,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true
+    },
+    "carpet=gray,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=gray,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true
+    },
+    "carpet=gray,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray",
+      "uvlock": true
+    },
+    "carpet=gray,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=gray,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=gray,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=gray,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=gray,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=gray,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=gray,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=gray,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=gray,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=gray,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=gray,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=gray,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=gray,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=gray,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=gray,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=gray,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true
+    },
+    "carpet=gray,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=gray,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true
+    },
+    "carpet=gray,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=gray,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=gray,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=gray,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=gray,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=gray,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=gray,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=gray,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=gray,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=gray,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=gray,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=gray,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=gray,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=gray,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=gray,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=gray,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=gray,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_gray",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=green,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=green,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true
+    },
+    "carpet=green,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=green,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true
+    },
+    "carpet=green,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_green",
+      "uvlock": true
+    },
+    "carpet=green,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=green,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=green,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=green,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=green,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_green",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=green,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=green,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=green,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=green,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=green,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_green",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=green,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=green,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=green,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=green,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=green,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_green",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=green,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true
+    },
+    "carpet=green,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=green,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true
+    },
+    "carpet=green,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=green,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_green",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=green,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=green,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=green,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=green,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=green,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_green",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=green,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=green,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=green,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=green,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=green,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_green",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=green,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=green,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=green,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=green,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_green_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=green,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_green",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=light_blue,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=light_blue,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true
+    },
+    "carpet=light_blue,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=light_blue,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true
+    },
+    "carpet=light_blue,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue",
+      "uvlock": true
+    },
+    "carpet=light_blue,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=light_blue,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=light_blue,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=light_blue,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=light_blue,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=light_blue,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=light_blue,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=light_blue,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=light_blue,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=light_blue,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=light_blue,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=light_blue,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=light_blue,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=light_blue,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=light_blue,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=light_blue,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true
+    },
+    "carpet=light_blue,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=light_blue,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true
+    },
+    "carpet=light_blue,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=light_blue,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=light_blue,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=light_blue,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=light_blue,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=light_blue,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=light_blue,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=light_blue,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=light_blue,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=light_blue,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=light_blue,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=light_blue,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=light_blue,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=light_blue,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=light_blue,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=light_blue,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=light_blue,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_blue",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=light_gray,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=light_gray,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true
+    },
+    "carpet=light_gray,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=light_gray,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true
+    },
+    "carpet=light_gray,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray",
+      "uvlock": true
+    },
+    "carpet=light_gray,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=light_gray,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=light_gray,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=light_gray,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=light_gray,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=light_gray,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=light_gray,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=light_gray,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=light_gray,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=light_gray,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=light_gray,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=light_gray,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=light_gray,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=light_gray,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=light_gray,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=light_gray,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true
+    },
+    "carpet=light_gray,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=light_gray,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true
+    },
+    "carpet=light_gray,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=light_gray,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=light_gray,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=light_gray,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=light_gray,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=light_gray,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=light_gray,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=light_gray,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=light_gray,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=light_gray,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=light_gray,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=light_gray,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=light_gray,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=light_gray,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=light_gray,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=light_gray,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=light_gray,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_light_gray",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=lime,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=lime,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true
+    },
+    "carpet=lime,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=lime,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true
+    },
+    "carpet=lime,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime",
+      "uvlock": true
+    },
+    "carpet=lime,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=lime,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=lime,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=lime,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=lime,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=lime,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=lime,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=lime,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=lime,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=lime,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=lime,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=lime,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=lime,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=lime,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=lime,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=lime,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true
+    },
+    "carpet=lime,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=lime,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true
+    },
+    "carpet=lime,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=lime,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=lime,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=lime,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=lime,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=lime,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=lime,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=lime,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=lime,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=lime,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=lime,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=lime,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=lime,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=lime,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=lime,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=lime,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=lime,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_lime",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=magenta,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=magenta,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true
+    },
+    "carpet=magenta,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=magenta,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true
+    },
+    "carpet=magenta,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta",
+      "uvlock": true
+    },
+    "carpet=magenta,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=magenta,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=magenta,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=magenta,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=magenta,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=magenta,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=magenta,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=magenta,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=magenta,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=magenta,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=magenta,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=magenta,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=magenta,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=magenta,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=magenta,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=magenta,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true
+    },
+    "carpet=magenta,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=magenta,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true
+    },
+    "carpet=magenta,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=magenta,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=magenta,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=magenta,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=magenta,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=magenta,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=magenta,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=magenta,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=magenta,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=magenta,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=magenta,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=magenta,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=magenta,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=magenta,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=magenta,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=magenta,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=magenta,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_magenta",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=orange,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=orange,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true
+    },
+    "carpet=orange,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=orange,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true
+    },
+    "carpet=orange,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange",
+      "uvlock": true
+    },
+    "carpet=orange,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=orange,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=orange,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=orange,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=orange,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=orange,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=orange,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=orange,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=orange,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=orange,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=orange,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=orange,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=orange,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=orange,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=orange,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=orange,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true
+    },
+    "carpet=orange,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=orange,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true
+    },
+    "carpet=orange,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=orange,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=orange,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=orange,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=orange,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=orange,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=orange,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=orange,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=orange,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=orange,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=orange,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=orange,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=orange,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=orange,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=orange,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=orange,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=orange,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_orange",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=pink,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=pink,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true
+    },
+    "carpet=pink,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=pink,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true
+    },
+    "carpet=pink,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink",
+      "uvlock": true
+    },
+    "carpet=pink,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=pink,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=pink,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=pink,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=pink,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=pink,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=pink,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=pink,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=pink,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=pink,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=pink,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=pink,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=pink,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=pink,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=pink,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=pink,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true
+    },
+    "carpet=pink,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=pink,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true
+    },
+    "carpet=pink,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=pink,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=pink,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=pink,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=pink,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=pink,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=pink,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=pink,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=pink,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=pink,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=pink,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=pink,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=pink,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=pink,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=pink,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=pink,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=pink,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_pink",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=purple,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=purple,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true
+    },
+    "carpet=purple,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=purple,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true
+    },
+    "carpet=purple,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple",
+      "uvlock": true
+    },
+    "carpet=purple,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=purple,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=purple,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=purple,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=purple,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=purple,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=purple,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=purple,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=purple,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=purple,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=purple,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=purple,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=purple,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=purple,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=purple,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=purple,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true
+    },
+    "carpet=purple,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=purple,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true
+    },
+    "carpet=purple,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=purple,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=purple,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=purple,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=purple,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=purple,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=purple,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=purple,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=purple,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=purple,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=purple,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=purple,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=purple,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=purple,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=purple,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=purple,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=purple,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_purple",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=red,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=red,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true
+    },
+    "carpet=red,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=red,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true
+    },
+    "carpet=red,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_red",
+      "uvlock": true
+    },
+    "carpet=red,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=red,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=red,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=red,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=red,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_red",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=red,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=red,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=red,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=red,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=red,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_red",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=red,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=red,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=red,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=red,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=red,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_red",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=red,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true
+    },
+    "carpet=red,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=red,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true
+    },
+    "carpet=red,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=red,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_red",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=red,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=red,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=red,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=red,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=red,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_red",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=red,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=red,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=red,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=red,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=red,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_red",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=red,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=red,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=red,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=red,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_red_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=red,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_red",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=white,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=white,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true
+    },
+    "carpet=white,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=white,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true
+    },
+    "carpet=white,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_white",
+      "uvlock": true
+    },
+    "carpet=white,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=white,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=white,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=white,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=white,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_white",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=white,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=white,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=white,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=white,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=white,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_white",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=white,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=white,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=white,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=white,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=white,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_white",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=white,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true
+    },
+    "carpet=white,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=white,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true
+    },
+    "carpet=white,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=white,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_white",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=white,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=white,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=white,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=white,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=white,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_white",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=white,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=white,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=white,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=white,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=white,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_white",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=white,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=white,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=white,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=white,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_white_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=white,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_white",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=yellow,facing=east,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=yellow,facing=east,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true
+    },
+    "carpet=yellow,facing=east,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=yellow,facing=east,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true
+    },
+    "carpet=yellow,facing=east,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow",
+      "uvlock": true
+    },
+    "carpet=yellow,facing=east,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=yellow,facing=east,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=yellow,facing=east,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=yellow,facing=east,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=yellow,facing=east,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=yellow,facing=north,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=yellow,facing=north,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=yellow,facing=north,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=yellow,facing=north,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=yellow,facing=north,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow",
+      "uvlock": true,
+      "y": 270
+    },
+    "carpet=yellow,facing=north,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=yellow,facing=north,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=yellow,facing=north,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=yellow,facing=north,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=yellow,facing=north,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow",
+      "uvlock": true,
+      "x": 180,
+      "y": 270
+    },
+    "carpet=yellow,facing=south,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true
+    },
+    "carpet=yellow,facing=south,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=yellow,facing=south,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true
+    },
+    "carpet=yellow,facing=south,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=yellow,facing=south,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=yellow,facing=south,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=yellow,facing=south,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=yellow,facing=south,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "x": 180
+    },
+    "carpet=yellow,facing=south,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=yellow,facing=south,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=yellow,facing=west,half=bottom,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=yellow,facing=west,half=bottom,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=yellow,facing=west,half=bottom,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "y": 90
+    },
+    "carpet=yellow,facing=west,half=bottom,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=yellow,facing=west,half=bottom,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow",
+      "uvlock": true,
+      "y": 180
+    },
+    "carpet=yellow,facing=west,half=top,shape=inner_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=yellow,facing=west,half=top,shape=inner_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_inner",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=yellow,facing=west,half=top,shape=outer_left": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 90
+    },
+    "carpet=yellow,facing=west,half=top,shape=outer_right": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow_outer",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    },
+    "carpet=yellow,facing=west,half=top,shape=straight": {
+      "model": "carpeted-mod:block/prismarine_stairs_yellow",
+      "uvlock": true,
+      "x": 180,
+      "y": 180
+    }
+  }
+}

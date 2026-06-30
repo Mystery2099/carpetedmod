@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/inner_carpeted_stairs",
+  "textures": {
+    "bottom": "minecraft:block/smooth_red_sandstone_stairs_bottom",
+    "carpet": "minecraft:block/gray_carpet",
+    "side": "minecraft:block/smooth_red_sandstone_stairs_side",
+    "top": "minecraft:block/smooth_red_sandstone_stairs_top"
+  }
+}

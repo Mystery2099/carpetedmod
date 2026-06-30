@@ -50,9 +50,25 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
     }
 
     private fun createSlabModels(generators: BlockModelGenerators, base: SlabBlock, block: CarpetedSlabBlock) {
-        val byColor = DyeColor.entries.associateWith { color ->
+        val bottomByColor = DyeColor.entries.associateWith { color ->
             val model = SLAB_TEMPLATE.create(
                 modelId(block, color.getName()),
+                textureMapping(base, color),
+                generators.modelOutput
+            )
+            BlockModelGenerators.plainVariant(model)
+        }
+        val topByColor = DyeColor.entries.associateWith { color ->
+            val model = TOP_SLAB_TEMPLATE.create(
+                modelId(block, "${color.getName()}_top"),
+                textureMapping(base, color),
+                generators.modelOutput
+            )
+            BlockModelGenerators.plainVariant(model)
+        }
+        val doubleByColor = DyeColor.entries.associateWith { color ->
+            val model = DOUBLE_SLAB_TEMPLATE.create(
+                modelId(block, "${color.getName()}_double"),
                 textureMapping(base, color),
                 generators.modelOutput
             )
@@ -61,8 +77,12 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
 
         generators.blockStateOutput.accept(
             MultiVariantGenerator.dispatch(block).with(
-                PropertyDispatch.initial(CarpetedSlabBlock.CARPET, SlabBlock.TYPE).generate { color, _ ->
-                    byColor.getValue(color)
+                PropertyDispatch.initial(CarpetedSlabBlock.CARPET, SlabBlock.TYPE).generate { color, type ->
+                    when (type) {
+                        SlabType.BOTTOM -> bottomByColor.getValue(color)
+                        SlabType.TOP -> topByColor.getValue(color)
+                        SlabType.DOUBLE -> doubleByColor.getValue(color)
+                    }
                 }
             )
         )
@@ -159,6 +179,22 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
 
         private val SLAB_TEMPLATE = ModelTemplate(
             Optional.of(CarpetedMod.id("block/carpeted_slab")),
+            Optional.empty(),
+            TextureSlot.BOTTOM,
+            TextureSlot.TOP,
+            TextureSlot.SIDE,
+            CARPET
+        )
+        private val TOP_SLAB_TEMPLATE = ModelTemplate(
+            Optional.of(CarpetedMod.id("block/top_carpeted_slab")),
+            Optional.empty(),
+            TextureSlot.BOTTOM,
+            TextureSlot.TOP,
+            TextureSlot.SIDE,
+            CARPET
+        )
+        private val DOUBLE_SLAB_TEMPLATE = ModelTemplate(
+            Optional.of(CarpetedMod.id("block/double_carpeted_slab")),
             Optional.empty(),
             TextureSlot.BOTTOM,
             TextureSlot.TOP,

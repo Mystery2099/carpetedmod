@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/carpeted_stairs",
+  "textures": {
+    "bottom": "minecraft:block/dark_prismarine_stairs_bottom",
+    "carpet": "minecraft:block/orange_carpet",
+    "side": "minecraft:block/dark_prismarine_stairs_side",
+    "top": "minecraft:block/dark_prismarine_stairs_top"
+  }
+}

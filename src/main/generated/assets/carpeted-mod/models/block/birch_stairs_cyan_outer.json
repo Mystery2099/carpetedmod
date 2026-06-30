@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/outer_carpeted_stairs",
+  "textures": {
+    "bottom": "minecraft:block/birch_stairs_bottom",
+    "carpet": "minecraft:block/cyan_carpet",
+    "side": "minecraft:block/birch_stairs_side",
+    "top": "minecraft:block/birch_stairs_top"
+  }
+}

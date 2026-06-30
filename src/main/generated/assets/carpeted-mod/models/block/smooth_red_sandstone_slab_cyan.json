@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/carpeted_slab",
+  "textures": {
+    "bottom": "minecraft:block/smooth_red_sandstone_slab_bottom",
+    "carpet": "minecraft:block/cyan_carpet",
+    "side": "minecraft:block/smooth_red_sandstone_slab_side",
+    "top": "minecraft:block/smooth_red_sandstone_slab_top"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/outer_carpeted_stairs",
+  "textures": {
+    "bottom": "minecraft:block/polished_andesite_stairs_bottom",
+    "carpet": "minecraft:block/yellow_carpet",
+    "side": "minecraft:block/polished_andesite_stairs_side",
+    "top": "minecraft:block/polished_andesite_stairs_top"
+  }
+}

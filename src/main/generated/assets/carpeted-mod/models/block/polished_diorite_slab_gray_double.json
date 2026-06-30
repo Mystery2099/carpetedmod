@@ -1,0 +1,9 @@
+{
+  "parent": "carpeted-mod:block/double_carpeted_slab",
+  "textures": {
+    "bottom": "minecraft:block/polished_diorite_slab_bottom",
+    "carpet": "minecraft:block/gray_carpet",
+    "side": "minecraft:block/polished_diorite_slab_side",
+    "top": "minecraft:block/polished_diorite_slab_top"
+  }
+}
