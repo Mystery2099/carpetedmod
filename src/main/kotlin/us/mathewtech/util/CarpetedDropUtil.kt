@@ -5,15 +5,14 @@ import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.enchantment.Enchantments
 import net.minecraft.world.item.enchantment.ItemEnchantments
 import net.minecraft.world.level.block.Block
+import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.storage.loot.LootParams
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams
 import us.mathewtech.block.CarpetedBlock
 import us.mathewtech.item.CarpetedItemStacks
 
 object CarpetedDropUtil {
-    fun drops(block: Block, carpeted: CarpetedBlock, params: LootParams.Builder): List<ItemStack> {
-        val state = params.getParameter(LootContextParams.BLOCK_STATE)
-
+    fun drops(block: Block, carpeted: CarpetedBlock, state: BlockState, params: LootParams.Builder): List<ItemStack> {
         if (hasSilkTouch(params)) {
             return listOf(
                 CarpetedItemStacks.create(

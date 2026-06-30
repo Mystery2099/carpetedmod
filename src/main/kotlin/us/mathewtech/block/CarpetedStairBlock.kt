@@ -78,7 +78,7 @@ class CarpetedStairBlock(
     }
 
     override fun getDrops(state: BlockState, params: LootParams.Builder): List<ItemStack> {
-        return CarpetedDropUtil.drops(this, this, params)
+        return CarpetedDropUtil.drops(this, this, state, params)
     }
 
     override fun getCloneItemStack(level: LevelReader, pos: BlockPos, state: BlockState, includeData: Boolean): ItemStack {
