@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/top_carpeted_slab",
   "textures": {
-    "bottom": "minecraft:block/cut_sandstone_slab_bottom",
+    "bottom": "minecraft:block/sandstone_top",
     "carpet": "minecraft:block/purple_carpet",
-    "side": "minecraft:block/cut_sandstone_slab_side",
-    "top": "minecraft:block/cut_sandstone_slab_top"
+    "side": "minecraft:block/cut_sandstone",
+    "top": "minecraft:block/sandstone_top"
   }
 }

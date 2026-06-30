@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/carpeted_stairs",
   "textures": {
-    "bottom": "minecraft:block/cherry_stairs_bottom",
+    "bottom": "minecraft:block/cherry_planks",
     "carpet": "minecraft:block/blue_carpet",
-    "side": "minecraft:block/cherry_stairs_side",
-    "top": "minecraft:block/cherry_stairs_top"
+    "side": "minecraft:block/cherry_planks",
+    "top": "minecraft:block/cherry_planks"
   }
 }

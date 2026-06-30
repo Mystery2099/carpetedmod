@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/inner_carpeted_stairs",
   "textures": {
-    "bottom": "minecraft:block/deepslate_brick_stairs_bottom",
+    "bottom": "minecraft:block/deepslate_bricks",
     "carpet": "minecraft:block/black_carpet",
-    "side": "minecraft:block/deepslate_brick_stairs_side",
-    "top": "minecraft:block/deepslate_brick_stairs_top"
+    "side": "minecraft:block/deepslate_bricks",
+    "top": "minecraft:block/deepslate_bricks"
   }
 }

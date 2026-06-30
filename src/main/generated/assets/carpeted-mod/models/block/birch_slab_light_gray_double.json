@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/double_carpeted_slab",
   "textures": {
-    "bottom": "minecraft:block/birch_slab_bottom",
+    "bottom": "minecraft:block/birch_planks",
     "carpet": "minecraft:block/light_gray_carpet",
-    "side": "minecraft:block/birch_slab_side",
-    "top": "minecraft:block/birch_slab_top"
+    "side": "minecraft:block/birch_planks",
+    "top": "minecraft:block/birch_planks"
   }
 }

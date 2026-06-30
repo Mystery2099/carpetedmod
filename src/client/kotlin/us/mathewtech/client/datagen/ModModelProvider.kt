@@ -1,5 +1,7 @@
 package us.mathewtech.client.datagen
 
+import com.google.gson.JsonObject
+import com.google.gson.JsonParser
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput
 import net.minecraft.client.data.models.BlockModelGenerators
@@ -11,6 +13,7 @@ import net.minecraft.client.data.models.model.ItemModelUtils
 import net.minecraft.client.data.models.model.ModelTemplate
 import net.minecraft.client.data.models.model.TextureMapping
 import net.minecraft.client.data.models.model.TextureSlot
+import net.minecraft.client.resources.model.sprite.Material
 import net.minecraft.core.Direction
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.resources.Identifier
@@ -128,7 +131,12 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
 
     private fun textureMapping(base: Block, carpetColor: DyeColor): TextureMapping {
         val carpet = Blocks.CARPET.pick(carpetColor)
-        return TextureMapping.cubeBottomTop(base)
+        val baseTextures = VanillaModelTextures.fromBlockModel(base)
+
+        return TextureMapping()
+            .put(TextureSlot.BOTTOM, Material(baseTextures.bottom))
+            .put(TextureSlot.TOP, Material(baseTextures.top))
+            .put(TextureSlot.SIDE, Material(baseTextures.side))
             .put(CARPET, TextureMapping.getBlockTexture(carpet))
     }
 
@@ -229,6 +237,48 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
         private fun modelId(block: Block, suffix: String): Identifier {
             val blockId = BuiltInRegistries.BLOCK.getKey(block)
             return Identifier.fromNamespaceAndPath(blockId.namespace, "block/${blockId.path}_$suffix")
+        }
+    }
+
+    private data class BlockModelTextures(
+        val bottom: Identifier,
+        val top: Identifier,
+        val side: Identifier
+    )
+
+    private object VanillaModelTextures {
+        fun fromBlockModel(block: Block): BlockModelTextures {
+            val blockId = BuiltInRegistries.BLOCK.getKey(block)
+            val textures = readTextures(blockId)
+            val fallback = Identifier.fromNamespaceAndPath(blockId.namespace, "block/${blockId.path}")
+
+            return BlockModelTextures(
+                bottom = resolveTexture(textures, "bottom") ?: resolveTexture(textures, "all") ?: fallback,
+                top = resolveTexture(textures, "top") ?: resolveTexture(textures, "all") ?: fallback,
+                side = resolveTexture(textures, "side") ?: resolveTexture(textures, "all") ?: fallback
+            )
+        }
+
+        private fun readTextures(blockId: Identifier): JsonObject {
+            val resourcePath = "assets/${blockId.namespace}/models/block/${blockId.path}.json"
+            val stream = Thread.currentThread().contextClassLoader.getResourceAsStream(resourcePath)
+                ?: return JsonObject()
+
+            stream.reader().use { reader ->
+                val root = JsonParser.parseReader(reader).asJsonObject
+                return root.getAsJsonObject("textures") ?: JsonObject()
+            }
+        }
+
+        private fun resolveTexture(textures: JsonObject, key: String): Identifier? {
+            val element = textures.get(key) ?: return null
+            val value = element.asString
+
+            if (value.startsWith("#")) {
+                return resolveTexture(textures, value.removePrefix("#"))
+            }
+
+            return Identifier.parse(value)
         }
     }
 }

@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/carpeted_stairs",
   "textures": {
-    "bottom": "minecraft:block/mossy_cobblestone_stairs_bottom",
+    "bottom": "minecraft:block/mossy_cobblestone",
     "carpet": "minecraft:block/white_carpet",
-    "side": "minecraft:block/mossy_cobblestone_stairs_side",
-    "top": "minecraft:block/mossy_cobblestone_stairs_top"
+    "side": "minecraft:block/mossy_cobblestone",
+    "top": "minecraft:block/mossy_cobblestone"
   }
 }

@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/inner_carpeted_stairs",
   "textures": {
-    "bottom": "minecraft:block/diorite_stairs_bottom",
+    "bottom": "minecraft:block/diorite",
     "carpet": "minecraft:block/yellow_carpet",
-    "side": "minecraft:block/diorite_stairs_side",
-    "top": "minecraft:block/diorite_stairs_top"
+    "side": "minecraft:block/diorite",
+    "top": "minecraft:block/diorite"
   }
 }

@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/top_carpeted_slab",
   "textures": {
-    "bottom": "minecraft:block/polished_granite_slab_bottom",
+    "bottom": "minecraft:block/polished_granite",
     "carpet": "minecraft:block/orange_carpet",
-    "side": "minecraft:block/polished_granite_slab_side",
-    "top": "minecraft:block/polished_granite_slab_top"
+    "side": "minecraft:block/polished_granite",
+    "top": "minecraft:block/polished_granite"
   }
 }

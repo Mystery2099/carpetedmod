@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/double_carpeted_slab",
   "textures": {
-    "bottom": "minecraft:block/smooth_red_sandstone_slab_bottom",
+    "bottom": "minecraft:block/red_sandstone_top",
     "carpet": "minecraft:block/orange_carpet",
-    "side": "minecraft:block/smooth_red_sandstone_slab_side",
-    "top": "minecraft:block/smooth_red_sandstone_slab_top"
+    "side": "minecraft:block/red_sandstone_top",
+    "top": "minecraft:block/red_sandstone_top"
   }
 }

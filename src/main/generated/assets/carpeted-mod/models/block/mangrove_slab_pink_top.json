@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/top_carpeted_slab",
   "textures": {
-    "bottom": "minecraft:block/mangrove_slab_bottom",
+    "bottom": "minecraft:block/mangrove_planks",
     "carpet": "minecraft:block/pink_carpet",
-    "side": "minecraft:block/mangrove_slab_side",
-    "top": "minecraft:block/mangrove_slab_top"
+    "side": "minecraft:block/mangrove_planks",
+    "top": "minecraft:block/mangrove_planks"
   }
 }

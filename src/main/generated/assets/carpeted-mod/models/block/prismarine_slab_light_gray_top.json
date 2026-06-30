@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/top_carpeted_slab",
   "textures": {
-    "bottom": "minecraft:block/prismarine_slab_bottom",
+    "bottom": "minecraft:block/prismarine",
     "carpet": "minecraft:block/light_gray_carpet",
-    "side": "minecraft:block/prismarine_slab_side",
-    "top": "minecraft:block/prismarine_slab_top"
+    "side": "minecraft:block/prismarine",
+    "top": "minecraft:block/prismarine"
   }
 }

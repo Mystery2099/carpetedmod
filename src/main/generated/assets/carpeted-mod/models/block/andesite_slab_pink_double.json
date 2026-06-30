@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/double_carpeted_slab",
   "textures": {
-    "bottom": "minecraft:block/andesite_slab_bottom",
+    "bottom": "minecraft:block/andesite",
     "carpet": "minecraft:block/pink_carpet",
-    "side": "minecraft:block/andesite_slab_side",
-    "top": "minecraft:block/andesite_slab_top"
+    "side": "minecraft:block/andesite",
+    "top": "minecraft:block/andesite"
   }
 }

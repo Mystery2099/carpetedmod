@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/inner_carpeted_stairs",
   "textures": {
-    "bottom": "minecraft:block/blackstone_stairs_bottom",
+    "bottom": "minecraft:block/blackstone_top",
     "carpet": "minecraft:block/blue_carpet",
-    "side": "minecraft:block/blackstone_stairs_side",
-    "top": "minecraft:block/blackstone_stairs_top"
+    "side": "minecraft:block/blackstone",
+    "top": "minecraft:block/blackstone_top"
   }
 }

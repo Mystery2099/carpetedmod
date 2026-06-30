@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/double_carpeted_slab",
   "textures": {
-    "bottom": "minecraft:block/bamboo_mosaic_slab_bottom",
+    "bottom": "minecraft:block/bamboo_mosaic",
     "carpet": "minecraft:block/magenta_carpet",
-    "side": "minecraft:block/bamboo_mosaic_slab_side",
-    "top": "minecraft:block/bamboo_mosaic_slab_top"
+    "side": "minecraft:block/bamboo_mosaic",
+    "top": "minecraft:block/bamboo_mosaic"
   }
 }

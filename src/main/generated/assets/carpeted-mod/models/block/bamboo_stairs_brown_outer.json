@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/outer_carpeted_stairs",
   "textures": {
-    "bottom": "minecraft:block/bamboo_stairs_bottom",
+    "bottom": "minecraft:block/bamboo_planks",
     "carpet": "minecraft:block/brown_carpet",
-    "side": "minecraft:block/bamboo_stairs_side",
-    "top": "minecraft:block/bamboo_stairs_top"
+    "side": "minecraft:block/bamboo_planks",
+    "top": "minecraft:block/bamboo_planks"
   }
 }

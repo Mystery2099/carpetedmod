@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/carpeted_slab",
   "textures": {
-    "bottom": "minecraft:block/smooth_stone_slab_bottom",
+    "bottom": "minecraft:block/smooth_stone",
     "carpet": "minecraft:block/cyan_carpet",
     "side": "minecraft:block/smooth_stone_slab_side",
-    "top": "minecraft:block/smooth_stone_slab_top"
+    "top": "minecraft:block/smooth_stone"
   }
 }

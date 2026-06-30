@@ -1,9 +1,9 @@
 {
   "parent": "carpeted-mod:block/carpeted_slab",
   "textures": {
-    "bottom": "minecraft:block/spruce_slab_bottom",
+    "bottom": "minecraft:block/spruce_planks",
     "carpet": "minecraft:block/blue_carpet",
-    "side": "minecraft:block/spruce_slab_side",
-    "top": "minecraft:block/spruce_slab_top"
+    "side": "minecraft:block/spruce_planks",
+    "top": "minecraft:block/spruce_planks"
   }
 }
