@@ -1,11 +1,14 @@
 package us.mathewtech.interaction
 
 import net.fabricmc.fabric.api.event.player.UseBlockCallback
+import net.minecraft.core.component.DataComponents
+import net.minecraft.sounds.SoundEvents
 import net.minecraft.sounds.SoundSource
 import net.minecraft.core.Direction
 import net.minecraft.world.InteractionHand
 import net.minecraft.world.InteractionResult
 import net.minecraft.world.entity.player.Player
+import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.level.Level
 import net.minecraft.world.level.block.SlabBlock
@@ -18,6 +21,7 @@ import us.mathewtech.block.CarpetSurface
 import us.mathewtech.block.CarpetedSlabBlock
 import us.mathewtech.block.CarpetedStairBlock
 import us.mathewtech.registry.ModBlocks
+import us.mathewtech.registry.ModItemTags
 import us.mathewtech.util.CarpetColorUtil
 import us.mathewtech.util.StateCopyUtil
 
@@ -31,8 +35,12 @@ object CarpetInteractionHandler {
         val state = level.getBlockState(pos)
         val stack = player.getItemInHand(hand)
 
-        if (player.isSecondaryUseActive && stack.isEmpty) {
-            return removeCarpet(player, level, state, hitResult)
+        if (stack.`is`(ModItemTags.CARPET_REMOVERS)) {
+            return removeCarpet(player, level, hand, state, hitResult)
+        }
+
+        stack.get(DataComponents.DYE)?.let { dyeColor ->
+            return dyeCarpet(player, level, hand, state, hitResult, dyeColor)
         }
 
         val carpetColor = CarpetColorUtil.colorFromCarpetItem(stack.item) ?: return InteractionResult.PASS
@@ -45,23 +53,11 @@ object CarpetInteractionHandler {
         hand: InteractionHand,
         state: BlockState,
         hitResult: BlockHitResult,
-        carpetColor: net.minecraft.world.item.DyeColor
+        carpetColor: DyeColor
     ): InteractionResult {
         val newState = when (val block = state.block) {
-            is CarpetedSlabBlock -> {
-                if (!canPlaceOnSlabSurface(hitResult.direction)) return InteractionResult.PASS
-
-                state
-                    .setValue(CarpetedSlabBlock.CARPET, carpetColor)
-                    .setValue(CarpetedSlabBlock.CARPET_SURFACE, CarpetSurface.TOP)
-            }
-            is CarpetedStairBlock -> {
-                if (!canPlaceOnStairTread(state, hitResult.direction)) return InteractionResult.PASS
-
-                state
-                    .setValue(CarpetedStairBlock.CARPET, carpetColor)
-                    .setValue(CarpetedStairBlock.CARPET_SURFACE, CarpetSurface.TREAD)
-            }
+            is CarpetedSlabBlock,
+            is CarpetedStairBlock -> return InteractionResult.PASS
             else -> {
                 val slab = ModBlocks.carpetedSlabFor(block)
                 val stair = ModBlocks.carpetedStairFor(block)
@@ -93,7 +89,42 @@ object CarpetInteractionHandler {
         return InteractionResult.SUCCESS_SERVER
     }
 
-    private fun removeCarpet(player: Player, level: Level, state: BlockState, hitResult: BlockHitResult): InteractionResult {
+    private fun dyeCarpet(
+        player: Player,
+        level: Level,
+        hand: InteractionHand,
+        state: BlockState,
+        hitResult: BlockHitResult,
+        dyeColor: DyeColor
+    ): InteractionResult {
+        val newState = when (state.block) {
+            is CarpetedSlabBlock -> {
+                if (!canPlaceOnSlabSurface(hitResult.direction)) return InteractionResult.PASS
+                if (state.getValue(CarpetedSlabBlock.CARPET) == dyeColor) return InteractionResult.PASS
+
+                state.setValue(CarpetedSlabBlock.CARPET, dyeColor)
+            }
+            is CarpetedStairBlock -> {
+                if (!canPlaceOnStairTread(state, hitResult.direction)) return InteractionResult.PASS
+                if (state.getValue(CarpetedStairBlock.CARPET) == dyeColor) return InteractionResult.PASS
+
+                state.setValue(CarpetedStairBlock.CARPET, dyeColor)
+            }
+            else -> return InteractionResult.PASS
+        }
+
+        if (level.isClientSide) return InteractionResult.SUCCESS
+
+        level.setBlock(hitResult.blockPos, newState, 3)
+        if (!player.isCreative) {
+            player.getItemInHand(hand).consume(1, player)
+        }
+        playWoolPlaceSound(level, player, hitResult)
+
+        return InteractionResult.SUCCESS_SERVER
+    }
+
+    private fun removeCarpet(player: Player, level: Level, hand: InteractionHand, state: BlockState, hitResult: BlockHitResult): InteractionResult {
         val newState = when (val block = state.block) {
             is CarpetedSlabBlock -> StateCopyUtil.copyCarpetedToBaseSlab(state, block)
             is CarpetedStairBlock -> StateCopyUtil.copyCarpetedToBaseStairs(state, block)
@@ -104,19 +135,31 @@ object CarpetInteractionHandler {
             return InteractionResult.SUCCESS
         }
 
-        val carpetStack = when (val block = state.block) {
+        val carpetStack = carpetStackFrom(state)
+
+        level.setBlock(hitResult.blockPos, newState, 3)
+        returnOrDropCarpet(player, carpetStack)
+        val toolStack = player.getItemInHand(hand)
+        if (!player.isCreative && toolStack.isDamageableItem) {
+            toolStack.hurtAndBreak(1, player, hand)
+        }
+        playShearsSound(level, player, hitResult)
+
+        return InteractionResult.SUCCESS_SERVER
+    }
+
+    private fun carpetStackFrom(state: BlockState): ItemStack {
+        return when (val block = state.block) {
             is CarpetedSlabBlock -> ItemStack(block.getCarpetItemFromState(state))
             is CarpetedStairBlock -> ItemStack(block.getCarpetItemFromState(state))
             else -> ItemStack.EMPTY
         }
+    }
 
-        level.setBlock(hitResult.blockPos, newState, 3)
-        if (!player.addItem(carpetStack)) {
-            player.drop(carpetStack, false)
+    private fun returnOrDropCarpet(player: Player, stack: ItemStack) {
+        if (!player.addItem(stack)) {
+            player.drop(stack, false)
         }
-        playWoolPlaceSound(level, player, hitResult)
-
-        return InteractionResult.SUCCESS_SERVER
     }
 
     private fun playWoolPlaceSound(level: Level, player: Player, hitResult: BlockHitResult) {
@@ -128,6 +171,17 @@ object CarpetInteractionHandler {
             SoundSource.BLOCKS,
             (soundType.volume + 1.0F) / 2.0F,
             soundType.pitch * 0.8F
+        )
+    }
+
+    private fun playShearsSound(level: Level, player: Player, hitResult: BlockHitResult) {
+        level.playSound(
+            player,
+            hitResult.blockPos,
+            SoundEvents.SHEARS_SNIP,
+            SoundSource.BLOCKS,
+            1.0F,
+            1.0F
         )
     }
 
