@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/stone",
-    "carpet": "minecraft:block/magenta_carpet",
+    "carpet": "minecraft:block/magenta_wool",
     "side": "minecraft:block/stone",
     "top": "minecraft:block/stone"
   }

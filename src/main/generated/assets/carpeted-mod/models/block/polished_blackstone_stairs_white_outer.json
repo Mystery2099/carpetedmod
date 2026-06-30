@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/outer_carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/polished_blackstone",
-    "carpet": "minecraft:block/white_carpet",
+    "carpet": "minecraft:block/white_wool",
     "side": "minecraft:block/polished_blackstone",
     "top": "minecraft:block/polished_blackstone"
   }

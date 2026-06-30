@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/double_carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/prismarine",
-    "carpet": "minecraft:block/magenta_carpet",
+    "carpet": "minecraft:block/magenta_wool",
     "side": "minecraft:block/prismarine",
     "top": "minecraft:block/prismarine"
   }

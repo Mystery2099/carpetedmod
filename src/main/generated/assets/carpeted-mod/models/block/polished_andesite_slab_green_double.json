@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/double_carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/polished_andesite",
-    "carpet": "minecraft:block/green_carpet",
+    "carpet": "minecraft:block/green_wool",
     "side": "minecraft:block/polished_andesite",
     "top": "minecraft:block/polished_andesite"
   }

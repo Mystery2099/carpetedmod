@@ -132,12 +132,13 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
     private fun textureMapping(base: Block, carpetColor: DyeColor): TextureMapping {
         val carpet = Blocks.CARPET.pick(carpetColor)
         val baseTextures = VanillaModelTextures.fromBlockModel(base)
+        val carpetTexture = VanillaModelTextures.fromCarpetModel(carpet)
 
         return TextureMapping()
             .put(TextureSlot.BOTTOM, Material(baseTextures.bottom))
             .put(TextureSlot.TOP, Material(baseTextures.top))
             .put(TextureSlot.SIDE, Material(baseTextures.side))
-            .put(CARPET, TextureMapping.getBlockTexture(carpet))
+            .put(CARPET, Material(carpetTexture))
     }
 
     private fun stairVariant(
@@ -257,6 +258,16 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
                 top = resolveTexture(textures, "top") ?: resolveTexture(textures, "all") ?: fallback,
                 side = resolveTexture(textures, "side") ?: resolveTexture(textures, "all") ?: fallback
             )
+        }
+
+        fun fromCarpetModel(carpet: Block): Identifier {
+            val blockId = BuiltInRegistries.BLOCK.getKey(carpet)
+            val textures = readTextures(blockId)
+            val fallback = Identifier.fromNamespaceAndPath(blockId.namespace, "block/${blockId.path}")
+
+            return resolveTexture(textures, "wool")
+                ?: resolveTexture(textures, "all")
+                ?: fallback
         }
 
         private fun readTextures(blockId: Identifier): JsonObject {

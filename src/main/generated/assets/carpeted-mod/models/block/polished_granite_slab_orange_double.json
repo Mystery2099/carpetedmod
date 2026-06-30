@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/double_carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/polished_granite",
-    "carpet": "minecraft:block/orange_carpet",
+    "carpet": "minecraft:block/orange_wool",
     "side": "minecraft:block/polished_granite",
     "top": "minecraft:block/polished_granite"
   }

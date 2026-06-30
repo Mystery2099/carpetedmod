@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/deepslate_bricks",
-    "carpet": "minecraft:block/gray_carpet",
+    "carpet": "minecraft:block/gray_wool",
     "side": "minecraft:block/deepslate_bricks",
     "top": "minecraft:block/deepslate_bricks"
   }

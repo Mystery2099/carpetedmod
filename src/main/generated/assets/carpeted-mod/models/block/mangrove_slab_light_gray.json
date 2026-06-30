@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/mangrove_planks",
-    "carpet": "minecraft:block/light_gray_carpet",
+    "carpet": "minecraft:block/light_gray_wool",
     "side": "minecraft:block/mangrove_planks",
     "top": "minecraft:block/mangrove_planks"
   }

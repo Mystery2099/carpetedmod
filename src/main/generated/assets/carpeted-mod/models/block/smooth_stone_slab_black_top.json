@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/top_carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/smooth_stone",
-    "carpet": "minecraft:block/black_carpet",
+    "carpet": "minecraft:block/black_wool",
     "side": "minecraft:block/smooth_stone_slab_side",
     "top": "minecraft:block/smooth_stone"
   }

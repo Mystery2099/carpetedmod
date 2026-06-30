@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/double_carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/deepslate_bricks",
-    "carpet": "minecraft:block/light_gray_carpet",
+    "carpet": "minecraft:block/light_gray_wool",
     "side": "minecraft:block/deepslate_bricks",
     "top": "minecraft:block/deepslate_bricks"
   }

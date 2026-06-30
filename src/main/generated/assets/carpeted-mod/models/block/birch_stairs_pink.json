@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/birch_planks",
-    "carpet": "minecraft:block/pink_carpet",
+    "carpet": "minecraft:block/pink_wool",
     "side": "minecraft:block/birch_planks",
     "top": "minecraft:block/birch_planks"
   }

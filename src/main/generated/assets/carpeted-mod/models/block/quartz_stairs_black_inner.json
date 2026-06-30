@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/inner_carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/quartz_block_top",
-    "carpet": "minecraft:block/black_carpet",
+    "carpet": "minecraft:block/black_wool",
     "side": "minecraft:block/quartz_block_side",
     "top": "minecraft:block/quartz_block_top"
   }

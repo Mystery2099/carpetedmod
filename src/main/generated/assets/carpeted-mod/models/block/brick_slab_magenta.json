@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/bricks",
-    "carpet": "minecraft:block/magenta_carpet",
+    "carpet": "minecraft:block/magenta_wool",
     "side": "minecraft:block/bricks",
     "top": "minecraft:block/bricks"
   }

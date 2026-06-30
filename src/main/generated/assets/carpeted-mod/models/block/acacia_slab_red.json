@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/acacia_planks",
-    "carpet": "minecraft:block/red_carpet",
+    "carpet": "minecraft:block/red_wool",
     "side": "minecraft:block/acacia_planks",
     "top": "minecraft:block/acacia_planks"
   }

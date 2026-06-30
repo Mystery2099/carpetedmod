@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/top_carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/birch_planks",
-    "carpet": "minecraft:block/red_carpet",
+    "carpet": "minecraft:block/red_wool",
     "side": "minecraft:block/birch_planks",
     "top": "minecraft:block/birch_planks"
   }

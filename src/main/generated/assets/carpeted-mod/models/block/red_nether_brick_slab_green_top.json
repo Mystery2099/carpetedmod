@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/top_carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/red_nether_bricks",
-    "carpet": "minecraft:block/green_carpet",
+    "carpet": "minecraft:block/green_wool",
     "side": "minecraft:block/red_nether_bricks",
     "top": "minecraft:block/red_nether_bricks"
   }

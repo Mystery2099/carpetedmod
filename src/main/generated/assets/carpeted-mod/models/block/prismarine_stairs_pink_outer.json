@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/outer_carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/prismarine",
-    "carpet": "minecraft:block/pink_carpet",
+    "carpet": "minecraft:block/pink_wool",
     "side": "minecraft:block/prismarine",
     "top": "minecraft:block/prismarine"
   }

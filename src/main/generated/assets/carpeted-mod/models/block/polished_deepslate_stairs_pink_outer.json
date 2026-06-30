@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/outer_carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/polished_deepslate",
-    "carpet": "minecraft:block/pink_carpet",
+    "carpet": "minecraft:block/pink_wool",
     "side": "minecraft:block/polished_deepslate",
     "top": "minecraft:block/polished_deepslate"
   }

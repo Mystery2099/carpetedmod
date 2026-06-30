@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/polished_deepslate",
-    "carpet": "minecraft:block/green_carpet",
+    "carpet": "minecraft:block/green_wool",
     "side": "minecraft:block/polished_deepslate",
     "top": "minecraft:block/polished_deepslate"
   }

@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/inner_carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/polished_deepslate",
-    "carpet": "minecraft:block/brown_carpet",
+    "carpet": "minecraft:block/brown_wool",
     "side": "minecraft:block/polished_deepslate",
     "top": "minecraft:block/polished_deepslate"
   }

@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/top_carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/cobblestone",
-    "carpet": "minecraft:block/cyan_carpet",
+    "carpet": "minecraft:block/cyan_wool",
     "side": "minecraft:block/cobblestone",
     "top": "minecraft:block/cobblestone"
   }

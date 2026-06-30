@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/bamboo_mosaic",
-    "carpet": "minecraft:block/brown_carpet",
+    "carpet": "minecraft:block/brown_wool",
     "side": "minecraft:block/bamboo_mosaic",
     "top": "minecraft:block/bamboo_mosaic"
   }

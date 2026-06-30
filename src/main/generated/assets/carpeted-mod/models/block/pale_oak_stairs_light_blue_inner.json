@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/inner_carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/pale_oak_planks",
-    "carpet": "minecraft:block/light_blue_carpet",
+    "carpet": "minecraft:block/light_blue_wool",
     "side": "minecraft:block/pale_oak_planks",
     "top": "minecraft:block/pale_oak_planks"
   }

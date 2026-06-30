@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/andesite",
-    "carpet": "minecraft:block/blue_carpet",
+    "carpet": "minecraft:block/blue_wool",
     "side": "minecraft:block/andesite",
     "top": "minecraft:block/andesite"
   }

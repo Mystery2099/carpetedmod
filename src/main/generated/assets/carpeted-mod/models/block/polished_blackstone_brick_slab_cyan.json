@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/polished_blackstone_bricks",
-    "carpet": "minecraft:block/cyan_carpet",
+    "carpet": "minecraft:block/cyan_wool",
     "side": "minecraft:block/polished_blackstone_bricks",
     "top": "minecraft:block/polished_blackstone_bricks"
   }

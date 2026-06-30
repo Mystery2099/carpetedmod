@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/inner_carpeted_stairs",
   "textures": {
     "bottom": "minecraft:block/sandstone_top",
-    "carpet": "minecraft:block/yellow_carpet",
+    "carpet": "minecraft:block/yellow_wool",
     "side": "minecraft:block/sandstone_top",
     "top": "minecraft:block/sandstone_top"
   }

@@ -2,7 +2,7 @@
   "parent": "carpeted-mod:block/double_carpeted_slab",
   "textures": {
     "bottom": "minecraft:block/jungle_planks",
-    "carpet": "minecraft:block/lime_carpet",
+    "carpet": "minecraft:block/lime_wool",
     "side": "minecraft:block/jungle_planks",
     "top": "minecraft:block/jungle_planks"
   }
