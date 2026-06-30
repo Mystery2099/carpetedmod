@@ -1,147 +1,1011 @@
 {
   "variants": {
-    "carpet=black,type=bottom": {
+    "carpet=black,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_black"
     },
-    "carpet=black,type=double": {
+    "carpet=black,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_black_double"
     },
-    "carpet=black,type=top": {
+    "carpet=black,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_black_top"
     },
-    "carpet=blue,type=bottom": {
+    "carpet=black,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_black"
+    },
+    "carpet=black,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_double"
+    },
+    "carpet=black,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_top"
+    },
+    "carpet=black,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_black"
+    },
+    "carpet=black,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_double"
+    },
+    "carpet=black,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_top"
+    },
+    "carpet=black,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_black"
+    },
+    "carpet=black,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_double"
+    },
+    "carpet=black,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_top"
+    },
+    "carpet=black,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_black"
+    },
+    "carpet=black,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_double"
+    },
+    "carpet=black,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_top"
+    },
+    "carpet=black,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_black"
+    },
+    "carpet=black,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_double"
+    },
+    "carpet=black,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_top"
+    },
+    "carpet=black,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_black"
+    },
+    "carpet=black,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_double"
+    },
+    "carpet=black,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_black_top"
+    },
+    "carpet=blue,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_blue"
     },
-    "carpet=blue,type=double": {
+    "carpet=blue,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_blue_double"
     },
-    "carpet=blue,type=top": {
+    "carpet=blue,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_blue_top"
     },
-    "carpet=brown,type=bottom": {
+    "carpet=blue,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue"
+    },
+    "carpet=blue,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_double"
+    },
+    "carpet=blue,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_top"
+    },
+    "carpet=blue,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue"
+    },
+    "carpet=blue,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_double"
+    },
+    "carpet=blue,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_top"
+    },
+    "carpet=blue,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue"
+    },
+    "carpet=blue,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_double"
+    },
+    "carpet=blue,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_top"
+    },
+    "carpet=blue,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue"
+    },
+    "carpet=blue,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_double"
+    },
+    "carpet=blue,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_top"
+    },
+    "carpet=blue,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue"
+    },
+    "carpet=blue,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_double"
+    },
+    "carpet=blue,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_top"
+    },
+    "carpet=blue,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue"
+    },
+    "carpet=blue,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_double"
+    },
+    "carpet=blue,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_blue_top"
+    },
+    "carpet=brown,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_brown"
     },
-    "carpet=brown,type=double": {
+    "carpet=brown,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_brown_double"
     },
-    "carpet=brown,type=top": {
+    "carpet=brown,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_brown_top"
     },
-    "carpet=cyan,type=bottom": {
+    "carpet=brown,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown"
+    },
+    "carpet=brown,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_double"
+    },
+    "carpet=brown,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_top"
+    },
+    "carpet=brown,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown"
+    },
+    "carpet=brown,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_double"
+    },
+    "carpet=brown,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_top"
+    },
+    "carpet=brown,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown"
+    },
+    "carpet=brown,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_double"
+    },
+    "carpet=brown,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_top"
+    },
+    "carpet=brown,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown"
+    },
+    "carpet=brown,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_double"
+    },
+    "carpet=brown,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_top"
+    },
+    "carpet=brown,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown"
+    },
+    "carpet=brown,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_double"
+    },
+    "carpet=brown,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_top"
+    },
+    "carpet=brown,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown"
+    },
+    "carpet=brown,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_double"
+    },
+    "carpet=brown,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_brown_top"
+    },
+    "carpet=cyan,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_cyan"
     },
-    "carpet=cyan,type=double": {
+    "carpet=cyan,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_cyan_double"
     },
-    "carpet=cyan,type=top": {
+    "carpet=cyan,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_cyan_top"
     },
-    "carpet=gray,type=bottom": {
+    "carpet=cyan,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan"
+    },
+    "carpet=cyan,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_double"
+    },
+    "carpet=cyan,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_top"
+    },
+    "carpet=cyan,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan"
+    },
+    "carpet=cyan,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_double"
+    },
+    "carpet=cyan,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_top"
+    },
+    "carpet=cyan,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan"
+    },
+    "carpet=cyan,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_double"
+    },
+    "carpet=cyan,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_top"
+    },
+    "carpet=cyan,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan"
+    },
+    "carpet=cyan,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_double"
+    },
+    "carpet=cyan,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_top"
+    },
+    "carpet=cyan,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan"
+    },
+    "carpet=cyan,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_double"
+    },
+    "carpet=cyan,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_top"
+    },
+    "carpet=cyan,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan"
+    },
+    "carpet=cyan,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_double"
+    },
+    "carpet=cyan,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_cyan_top"
+    },
+    "carpet=gray,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_gray"
     },
-    "carpet=gray,type=double": {
+    "carpet=gray,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_gray_double"
     },
-    "carpet=gray,type=top": {
+    "carpet=gray,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_gray_top"
     },
-    "carpet=green,type=bottom": {
+    "carpet=gray,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray"
+    },
+    "carpet=gray,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_double"
+    },
+    "carpet=gray,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_top"
+    },
+    "carpet=gray,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray"
+    },
+    "carpet=gray,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_double"
+    },
+    "carpet=gray,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_top"
+    },
+    "carpet=gray,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray"
+    },
+    "carpet=gray,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_double"
+    },
+    "carpet=gray,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_top"
+    },
+    "carpet=gray,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray"
+    },
+    "carpet=gray,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_double"
+    },
+    "carpet=gray,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_top"
+    },
+    "carpet=gray,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray"
+    },
+    "carpet=gray,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_double"
+    },
+    "carpet=gray,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_top"
+    },
+    "carpet=gray,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray"
+    },
+    "carpet=gray,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_double"
+    },
+    "carpet=gray,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_gray_top"
+    },
+    "carpet=green,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_green"
     },
-    "carpet=green,type=double": {
+    "carpet=green,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_green_double"
     },
-    "carpet=green,type=top": {
+    "carpet=green,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_green_top"
     },
-    "carpet=light_blue,type=bottom": {
+    "carpet=green,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_green"
+    },
+    "carpet=green,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_double"
+    },
+    "carpet=green,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_top"
+    },
+    "carpet=green,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_green"
+    },
+    "carpet=green,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_double"
+    },
+    "carpet=green,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_top"
+    },
+    "carpet=green,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_green"
+    },
+    "carpet=green,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_double"
+    },
+    "carpet=green,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_top"
+    },
+    "carpet=green,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_green"
+    },
+    "carpet=green,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_double"
+    },
+    "carpet=green,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_top"
+    },
+    "carpet=green,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_green"
+    },
+    "carpet=green,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_double"
+    },
+    "carpet=green,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_top"
+    },
+    "carpet=green,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_green"
+    },
+    "carpet=green,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_double"
+    },
+    "carpet=green,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_green_top"
+    },
+    "carpet=light_blue,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_light_blue"
     },
-    "carpet=light_blue,type=double": {
+    "carpet=light_blue,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_light_blue_double"
     },
-    "carpet=light_blue,type=top": {
+    "carpet=light_blue,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_light_blue_top"
     },
-    "carpet=light_gray,type=bottom": {
+    "carpet=light_blue,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue"
+    },
+    "carpet=light_blue,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_double"
+    },
+    "carpet=light_blue,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_top"
+    },
+    "carpet=light_blue,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue"
+    },
+    "carpet=light_blue,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_double"
+    },
+    "carpet=light_blue,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_top"
+    },
+    "carpet=light_blue,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue"
+    },
+    "carpet=light_blue,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_double"
+    },
+    "carpet=light_blue,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_top"
+    },
+    "carpet=light_blue,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue"
+    },
+    "carpet=light_blue,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_double"
+    },
+    "carpet=light_blue,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_top"
+    },
+    "carpet=light_blue,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue"
+    },
+    "carpet=light_blue,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_double"
+    },
+    "carpet=light_blue,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_top"
+    },
+    "carpet=light_blue,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue"
+    },
+    "carpet=light_blue,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_double"
+    },
+    "carpet=light_blue,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_blue_top"
+    },
+    "carpet=light_gray,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_light_gray"
     },
-    "carpet=light_gray,type=double": {
+    "carpet=light_gray,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_light_gray_double"
     },
-    "carpet=light_gray,type=top": {
+    "carpet=light_gray,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_light_gray_top"
     },
-    "carpet=lime,type=bottom": {
+    "carpet=light_gray,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray"
+    },
+    "carpet=light_gray,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_double"
+    },
+    "carpet=light_gray,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_top"
+    },
+    "carpet=light_gray,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray"
+    },
+    "carpet=light_gray,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_double"
+    },
+    "carpet=light_gray,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_top"
+    },
+    "carpet=light_gray,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray"
+    },
+    "carpet=light_gray,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_double"
+    },
+    "carpet=light_gray,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_top"
+    },
+    "carpet=light_gray,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray"
+    },
+    "carpet=light_gray,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_double"
+    },
+    "carpet=light_gray,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_top"
+    },
+    "carpet=light_gray,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray"
+    },
+    "carpet=light_gray,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_double"
+    },
+    "carpet=light_gray,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_top"
+    },
+    "carpet=light_gray,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray"
+    },
+    "carpet=light_gray,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_double"
+    },
+    "carpet=light_gray,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_light_gray_top"
+    },
+    "carpet=lime,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_lime"
     },
-    "carpet=lime,type=double": {
+    "carpet=lime,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_lime_double"
     },
-    "carpet=lime,type=top": {
+    "carpet=lime,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_lime_top"
     },
-    "carpet=magenta,type=bottom": {
+    "carpet=lime,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime"
+    },
+    "carpet=lime,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_double"
+    },
+    "carpet=lime,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_top"
+    },
+    "carpet=lime,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime"
+    },
+    "carpet=lime,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_double"
+    },
+    "carpet=lime,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_top"
+    },
+    "carpet=lime,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime"
+    },
+    "carpet=lime,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_double"
+    },
+    "carpet=lime,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_top"
+    },
+    "carpet=lime,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime"
+    },
+    "carpet=lime,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_double"
+    },
+    "carpet=lime,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_top"
+    },
+    "carpet=lime,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime"
+    },
+    "carpet=lime,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_double"
+    },
+    "carpet=lime,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_top"
+    },
+    "carpet=lime,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime"
+    },
+    "carpet=lime,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_double"
+    },
+    "carpet=lime,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_lime_top"
+    },
+    "carpet=magenta,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_magenta"
     },
-    "carpet=magenta,type=double": {
+    "carpet=magenta,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_magenta_double"
     },
-    "carpet=magenta,type=top": {
+    "carpet=magenta,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_magenta_top"
     },
-    "carpet=orange,type=bottom": {
+    "carpet=magenta,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta"
+    },
+    "carpet=magenta,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_double"
+    },
+    "carpet=magenta,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_top"
+    },
+    "carpet=magenta,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta"
+    },
+    "carpet=magenta,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_double"
+    },
+    "carpet=magenta,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_top"
+    },
+    "carpet=magenta,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta"
+    },
+    "carpet=magenta,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_double"
+    },
+    "carpet=magenta,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_top"
+    },
+    "carpet=magenta,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta"
+    },
+    "carpet=magenta,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_double"
+    },
+    "carpet=magenta,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_top"
+    },
+    "carpet=magenta,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta"
+    },
+    "carpet=magenta,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_double"
+    },
+    "carpet=magenta,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_top"
+    },
+    "carpet=magenta,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta"
+    },
+    "carpet=magenta,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_double"
+    },
+    "carpet=magenta,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_magenta_top"
+    },
+    "carpet=orange,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_orange"
     },
-    "carpet=orange,type=double": {
+    "carpet=orange,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_orange_double"
     },
-    "carpet=orange,type=top": {
+    "carpet=orange,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_orange_top"
     },
-    "carpet=pink,type=bottom": {
+    "carpet=orange,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange"
+    },
+    "carpet=orange,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_double"
+    },
+    "carpet=orange,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_top"
+    },
+    "carpet=orange,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange"
+    },
+    "carpet=orange,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_double"
+    },
+    "carpet=orange,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_top"
+    },
+    "carpet=orange,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange"
+    },
+    "carpet=orange,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_double"
+    },
+    "carpet=orange,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_top"
+    },
+    "carpet=orange,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange"
+    },
+    "carpet=orange,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_double"
+    },
+    "carpet=orange,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_top"
+    },
+    "carpet=orange,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange"
+    },
+    "carpet=orange,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_double"
+    },
+    "carpet=orange,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_top"
+    },
+    "carpet=orange,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange"
+    },
+    "carpet=orange,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_double"
+    },
+    "carpet=orange,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_orange_top"
+    },
+    "carpet=pink,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_pink"
     },
-    "carpet=pink,type=double": {
+    "carpet=pink,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_pink_double"
     },
-    "carpet=pink,type=top": {
+    "carpet=pink,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_pink_top"
     },
-    "carpet=purple,type=bottom": {
+    "carpet=pink,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink"
+    },
+    "carpet=pink,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_double"
+    },
+    "carpet=pink,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_top"
+    },
+    "carpet=pink,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink"
+    },
+    "carpet=pink,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_double"
+    },
+    "carpet=pink,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_top"
+    },
+    "carpet=pink,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink"
+    },
+    "carpet=pink,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_double"
+    },
+    "carpet=pink,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_top"
+    },
+    "carpet=pink,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink"
+    },
+    "carpet=pink,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_double"
+    },
+    "carpet=pink,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_top"
+    },
+    "carpet=pink,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink"
+    },
+    "carpet=pink,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_double"
+    },
+    "carpet=pink,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_top"
+    },
+    "carpet=pink,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink"
+    },
+    "carpet=pink,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_double"
+    },
+    "carpet=pink,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_pink_top"
+    },
+    "carpet=purple,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_purple"
     },
-    "carpet=purple,type=double": {
+    "carpet=purple,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_purple_double"
     },
-    "carpet=purple,type=top": {
+    "carpet=purple,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_purple_top"
     },
-    "carpet=red,type=bottom": {
+    "carpet=purple,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple"
+    },
+    "carpet=purple,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_double"
+    },
+    "carpet=purple,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_top"
+    },
+    "carpet=purple,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple"
+    },
+    "carpet=purple,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_double"
+    },
+    "carpet=purple,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_top"
+    },
+    "carpet=purple,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple"
+    },
+    "carpet=purple,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_double"
+    },
+    "carpet=purple,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_top"
+    },
+    "carpet=purple,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple"
+    },
+    "carpet=purple,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_double"
+    },
+    "carpet=purple,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_top"
+    },
+    "carpet=purple,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple"
+    },
+    "carpet=purple,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_double"
+    },
+    "carpet=purple,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_top"
+    },
+    "carpet=purple,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple"
+    },
+    "carpet=purple,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_double"
+    },
+    "carpet=purple,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_purple_top"
+    },
+    "carpet=red,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_red"
     },
-    "carpet=red,type=double": {
+    "carpet=red,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_red_double"
     },
-    "carpet=red,type=top": {
+    "carpet=red,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_red_top"
     },
-    "carpet=white,type=bottom": {
+    "carpet=red,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_red"
+    },
+    "carpet=red,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_double"
+    },
+    "carpet=red,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_top"
+    },
+    "carpet=red,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_red"
+    },
+    "carpet=red,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_double"
+    },
+    "carpet=red,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_top"
+    },
+    "carpet=red,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_red"
+    },
+    "carpet=red,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_double"
+    },
+    "carpet=red,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_top"
+    },
+    "carpet=red,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_red"
+    },
+    "carpet=red,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_double"
+    },
+    "carpet=red,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_top"
+    },
+    "carpet=red,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_red"
+    },
+    "carpet=red,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_double"
+    },
+    "carpet=red,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_top"
+    },
+    "carpet=red,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_red"
+    },
+    "carpet=red,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_double"
+    },
+    "carpet=red,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_red_top"
+    },
+    "carpet=white,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_white"
     },
-    "carpet=white,type=double": {
+    "carpet=white,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_white_double"
     },
-    "carpet=white,type=top": {
+    "carpet=white,carpet_surface=bottom,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_white_top"
     },
-    "carpet=yellow,type=bottom": {
+    "carpet=white,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_white"
+    },
+    "carpet=white,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_double"
+    },
+    "carpet=white,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_top"
+    },
+    "carpet=white,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_white"
+    },
+    "carpet=white,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_double"
+    },
+    "carpet=white,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_top"
+    },
+    "carpet=white,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_white"
+    },
+    "carpet=white,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_double"
+    },
+    "carpet=white,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_top"
+    },
+    "carpet=white,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_white"
+    },
+    "carpet=white,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_double"
+    },
+    "carpet=white,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_top"
+    },
+    "carpet=white,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_white"
+    },
+    "carpet=white,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_double"
+    },
+    "carpet=white,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_top"
+    },
+    "carpet=white,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_white"
+    },
+    "carpet=white,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_double"
+    },
+    "carpet=white,carpet_surface=west,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_white_top"
+    },
+    "carpet=yellow,carpet_surface=bottom,type=bottom": {
       "model": "carpeted-mod:block/nether_brick_slab_yellow"
     },
-    "carpet=yellow,type=double": {
+    "carpet=yellow,carpet_surface=bottom,type=double": {
       "model": "carpeted-mod:block/nether_brick_slab_yellow_double"
     },
-    "carpet=yellow,type=top": {
+    "carpet=yellow,carpet_surface=bottom,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_top"
+    },
+    "carpet=yellow,carpet_surface=east,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow"
+    },
+    "carpet=yellow,carpet_surface=east,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_double"
+    },
+    "carpet=yellow,carpet_surface=east,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_top"
+    },
+    "carpet=yellow,carpet_surface=north,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow"
+    },
+    "carpet=yellow,carpet_surface=north,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_double"
+    },
+    "carpet=yellow,carpet_surface=north,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_top"
+    },
+    "carpet=yellow,carpet_surface=south,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow"
+    },
+    "carpet=yellow,carpet_surface=south,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_double"
+    },
+    "carpet=yellow,carpet_surface=south,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_top"
+    },
+    "carpet=yellow,carpet_surface=top,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow"
+    },
+    "carpet=yellow,carpet_surface=top,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_double"
+    },
+    "carpet=yellow,carpet_surface=top,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_top"
+    },
+    "carpet=yellow,carpet_surface=tread,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow"
+    },
+    "carpet=yellow,carpet_surface=tread,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_double"
+    },
+    "carpet=yellow,carpet_surface=tread,type=top": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_top"
+    },
+    "carpet=yellow,carpet_surface=west,type=bottom": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow"
+    },
+    "carpet=yellow,carpet_surface=west,type=double": {
+      "model": "carpeted-mod:block/nether_brick_slab_yellow_double"
+    },
+    "carpet=yellow,carpet_surface=west,type=top": {
       "model": "carpeted-mod:block/nether_brick_slab_yellow_top"
     }
   }
