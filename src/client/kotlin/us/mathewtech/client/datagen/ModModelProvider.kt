@@ -80,7 +80,11 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
 
         generators.blockStateOutput.accept(
             MultiVariantGenerator.dispatch(block).with(
-                PropertyDispatch.initial(CarpetedSlabBlock.CARPET, SlabBlock.TYPE).generate { color, type ->
+                PropertyDispatch.initial(
+                    CarpetedSlabBlock.CARPET,
+                    SlabBlock.TYPE,
+                    CarpetedSlabBlock.CARPET_SURFACE
+                ).generate { color, type, _ ->
                     when (type) {
                         SlabType.BOTTOM -> bottomByColor.getValue(color)
                         SlabType.TOP -> topByColor.getValue(color)
@@ -112,10 +116,11 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
             MultiVariantGenerator.dispatch(block).with(
                 PropertyDispatch.initial(
                     CarpetedStairBlock.CARPET,
+                    CarpetedStairBlock.CARPET_SURFACE,
                     StairBlock.FACING,
                     StairBlock.HALF,
                     StairBlock.SHAPE
-                ).generate { color, facing, half, shape ->
+                ).generate { color, _, facing, half, shape ->
                     stairVariant(
                         straightByColor.getValue(color),
                         innerByColor.getValue(color),

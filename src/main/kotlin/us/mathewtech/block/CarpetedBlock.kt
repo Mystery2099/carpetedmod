@@ -12,6 +12,8 @@ interface CarpetedBlock {
 
     fun getCarpetColorFromState(state: BlockState): DyeColor
 
+    fun getCarpetSurfaceFromState(state: BlockState): CarpetSurface
+
     fun getCarpetItemFromState(state: BlockState): Item {
         return CarpetColorUtil.carpetItem(getCarpetColorFromState(state))
     }

@@ -2,6 +2,7 @@ package us.mathewtech.interaction
 
 import net.fabricmc.fabric.api.event.player.UseBlockCallback
 import net.minecraft.sounds.SoundSource
+import net.minecraft.core.Direction
 import net.minecraft.world.InteractionHand
 import net.minecraft.world.InteractionResult
 import net.minecraft.world.entity.player.Player
@@ -10,6 +11,7 @@ import net.minecraft.world.level.Level
 import net.minecraft.world.level.block.SoundType
 import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.phys.BlockHitResult
+import us.mathewtech.block.CarpetSurface
 import us.mathewtech.block.CarpetedSlabBlock
 import us.mathewtech.block.CarpetedStairBlock
 import us.mathewtech.registry.ModBlocks
@@ -43,15 +45,23 @@ object CarpetInteractionHandler {
         carpetColor: net.minecraft.world.item.DyeColor
     ): InteractionResult {
         val newState = when (val block = state.block) {
-            is CarpetedSlabBlock -> state.setValue(CarpetedSlabBlock.CARPET, carpetColor)
-            is CarpetedStairBlock -> state.setValue(CarpetedStairBlock.CARPET, carpetColor)
+            is CarpetedSlabBlock -> state
+                .setValue(CarpetedSlabBlock.CARPET, carpetColor)
+                .setValue(CarpetedSlabBlock.CARPET_SURFACE, surfaceFromFace(hitResult.direction))
+            is CarpetedStairBlock -> state
+                .setValue(CarpetedStairBlock.CARPET, carpetColor)
+                .setValue(CarpetedStairBlock.CARPET_SURFACE, CarpetSurface.TREAD)
             else -> {
                 val slab = ModBlocks.carpetedSlabFor(block)
                 val stair = ModBlocks.carpetedStairFor(block)
 
                 when {
-                    slab != null && StateCopyUtil.isSupportedSlabState(state) -> StateCopyUtil.copySlabToCarpeted(state, slab, carpetColor)
-                    stair != null -> StateCopyUtil.copyStairsToCarpeted(state, stair, carpetColor)
+                    slab != null && StateCopyUtil.isSupportedSlabState(state) -> {
+                        StateCopyUtil.copySlabToCarpeted(state, slab, carpetColor, surfaceFromFace(hitResult.direction))
+                    }
+                    stair != null -> {
+                        StateCopyUtil.copyStairsToCarpeted(state, stair, carpetColor, CarpetSurface.TREAD)
+                    }
                     else -> return InteractionResult.PASS
                 }
             }
@@ -104,5 +114,16 @@ object CarpetInteractionHandler {
             (soundType.volume + 1.0F) / 2.0F,
             soundType.pitch * 0.8F
         )
+    }
+
+    private fun surfaceFromFace(face: Direction): CarpetSurface {
+        return when (face) {
+            Direction.UP -> CarpetSurface.TOP
+            Direction.DOWN -> CarpetSurface.BOTTOM
+            Direction.NORTH -> CarpetSurface.NORTH
+            Direction.EAST -> CarpetSurface.EAST
+            Direction.SOUTH -> CarpetSurface.SOUTH
+            Direction.WEST -> CarpetSurface.WEST
+        }
     }
 }

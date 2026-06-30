@@ -16,6 +16,7 @@ class CarpetedSlabBlock(
 ) : SlabBlock(properties), CarpetedBlock {
     companion object {
         val CARPET: EnumProperty<DyeColor> = EnumProperty.create("carpet", DyeColor::class.java)
+        val CARPET_SURFACE: EnumProperty<CarpetSurface> = EnumProperty.create("carpet_surface", CarpetSurface::class.java)
     }
 
     init {
@@ -23,16 +24,21 @@ class CarpetedSlabBlock(
             this.defaultBlockState().setValue(TYPE, SlabType.BOTTOM)
                 .setValue(WATERLOGGED, false)
                 .setValue(CARPET, DyeColor.WHITE)
+                .setValue(CARPET_SURFACE, CarpetSurface.TOP)
         )
     }
 
     override fun createBlockStateDefinition(builder: StateDefinition.Builder<Block, BlockState>) {
         super.createBlockStateDefinition(builder)
-        builder.add(CARPET)
+        builder.add(CARPET, CARPET_SURFACE)
     }
 
     override fun getCarpetColorFromState(state: BlockState): DyeColor {
         return state.getValue(CARPET)
+    }
+
+    override fun getCarpetSurfaceFromState(state: BlockState): CarpetSurface {
+        return state.getValue(CARPET_SURFACE)
     }
 
     override fun getDrops(state: BlockState, params: LootParams.Builder): List<ItemStack> {

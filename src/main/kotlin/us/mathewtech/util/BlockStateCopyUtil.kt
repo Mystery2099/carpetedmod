@@ -5,6 +5,7 @@ import net.minecraft.world.level.block.SlabBlock
 import net.minecraft.world.level.block.StairBlock
 import net.minecraft.world.level.block.state.BlockState
 import net.minecraft.world.level.block.state.properties.SlabType
+import us.mathewtech.block.CarpetSurface
 import us.mathewtech.block.CarpetedSlabBlock
 import us.mathewtech.block.CarpetedStairBlock
 
@@ -12,14 +13,17 @@ object StateCopyUtil {
     fun copySlabToCarpeted(
         original: BlockState,
         carpeted: CarpetedSlabBlock,
-        color: DyeColor
+        color: DyeColor,
+        surface: CarpetSurface
     ): BlockState {
         var newState = carpeted.defaultBlockState()
 
         newState = newState.setValue(SlabBlock.TYPE, original.getValue(SlabBlock.TYPE))
         newState = newState.setValue(SlabBlock.WATERLOGGED, original.getValue(SlabBlock.WATERLOGGED))
 
-        return newState.setValue(CarpetedSlabBlock.CARPET, color)
+        return newState
+            .setValue(CarpetedSlabBlock.CARPET, color)
+            .setValue(CarpetedSlabBlock.CARPET_SURFACE, surface)
     }
 
     fun copyCarpetedToBaseSlab(state: BlockState, carpeted: CarpetedSlabBlock): BlockState {
@@ -38,7 +42,8 @@ object StateCopyUtil {
     fun copyStairsToCarpeted(
         original: BlockState,
         carpeted: CarpetedStairBlock,
-        color: DyeColor
+        color: DyeColor,
+        surface: CarpetSurface
     ): BlockState {
         var newState = carpeted.defaultBlockState()
 
@@ -47,7 +52,9 @@ object StateCopyUtil {
         newState = newState.setValue(StairBlock.SHAPE, original.getValue(StairBlock.SHAPE))
         newState = newState.setValue(StairBlock.WATERLOGGED, original.getValue(StairBlock.WATERLOGGED))
 
-        return newState.setValue(CarpetedStairBlock.CARPET, color)
+        return newState
+            .setValue(CarpetedStairBlock.CARPET, color)
+            .setValue(CarpetedStairBlock.CARPET_SURFACE, surface)
     }
 
     fun copyCarpetedToBaseStairs(state: BlockState, carpeted: CarpetedStairBlock): BlockState {
