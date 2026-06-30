@@ -154,37 +154,52 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
         half: Half,
         shape: StairsShape
     ): MultiVariant {
-        var variant = when (shape) {
+        val base = when (shape) {
             StairsShape.STRAIGHT -> straight
             StairsShape.INNER_LEFT, StairsShape.INNER_RIGHT -> inner
             StairsShape.OUTER_LEFT, StairsShape.OUTER_RIGHT -> outer
         }
 
-        if (half == Half.TOP) {
-            variant = variant.with(BlockModelGenerators.X_ROT_180)
+        val rotated = if (half == Half.TOP) {
+            base.with(BlockModelGenerators.X_ROT_180).with(topYRotation(facing, shape))
+        } else {
+            base.with(bottomYRotation(facing, shape))
         }
 
-        rotationFor(facing, shape)?.let {
-            variant = variant.with(it)
-        }
-
-        return variant.with(BlockModelGenerators.UV_LOCK)
+        return rotated.with(BlockModelGenerators.UV_LOCK)
     }
 
-    private fun rotationFor(facing: Direction, shape: StairsShape) = when (shape) {
+    private fun bottomYRotation(facing: Direction, shape: StairsShape) = when (shape) {
         StairsShape.STRAIGHT, StairsShape.INNER_RIGHT, StairsShape.OUTER_RIGHT -> when (facing) {
-            Direction.EAST -> null
+            Direction.EAST -> BlockModelGenerators.NOP
             Direction.SOUTH -> BlockModelGenerators.Y_ROT_90
             Direction.WEST -> BlockModelGenerators.Y_ROT_180
             Direction.NORTH -> BlockModelGenerators.Y_ROT_270
-            else -> null
+            else -> BlockModelGenerators.NOP
         }
         StairsShape.INNER_LEFT, StairsShape.OUTER_LEFT -> when (facing) {
-            Direction.SOUTH -> null
+            Direction.SOUTH -> BlockModelGenerators.NOP
             Direction.WEST -> BlockModelGenerators.Y_ROT_90
             Direction.NORTH -> BlockModelGenerators.Y_ROT_180
             Direction.EAST -> BlockModelGenerators.Y_ROT_270
-            else -> null
+            else -> BlockModelGenerators.NOP
+        }
+    }
+
+    private fun topYRotation(facing: Direction, shape: StairsShape) = when (shape) {
+        StairsShape.STRAIGHT, StairsShape.INNER_LEFT, StairsShape.OUTER_LEFT -> when (facing) {
+            Direction.EAST -> BlockModelGenerators.NOP
+            Direction.SOUTH -> BlockModelGenerators.Y_ROT_90
+            Direction.WEST -> BlockModelGenerators.Y_ROT_180
+            Direction.NORTH -> BlockModelGenerators.Y_ROT_270
+            else -> BlockModelGenerators.NOP
+        }
+        StairsShape.INNER_RIGHT, StairsShape.OUTER_RIGHT -> when (facing) {
+            Direction.NORTH -> BlockModelGenerators.NOP
+            Direction.EAST -> BlockModelGenerators.Y_ROT_90
+            Direction.SOUTH -> BlockModelGenerators.Y_ROT_180
+            Direction.WEST -> BlockModelGenerators.Y_ROT_270
+            else -> BlockModelGenerators.NOP
         }
     }
 
