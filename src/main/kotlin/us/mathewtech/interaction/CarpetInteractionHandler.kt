@@ -8,8 +8,11 @@ import net.minecraft.world.InteractionResult
 import net.minecraft.world.entity.player.Player
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.level.Level
+import net.minecraft.world.level.block.SlabBlock
 import net.minecraft.world.level.block.SoundType
+import net.minecraft.world.level.block.StairBlock
 import net.minecraft.world.level.block.state.BlockState
+import net.minecraft.world.level.block.state.properties.Half
 import net.minecraft.world.phys.BlockHitResult
 import us.mathewtech.block.CarpetSurface
 import us.mathewtech.block.CarpetedSlabBlock
@@ -45,21 +48,33 @@ object CarpetInteractionHandler {
         carpetColor: net.minecraft.world.item.DyeColor
     ): InteractionResult {
         val newState = when (val block = state.block) {
-            is CarpetedSlabBlock -> state
-                .setValue(CarpetedSlabBlock.CARPET, carpetColor)
-                .setValue(CarpetedSlabBlock.CARPET_SURFACE, surfaceFromFace(hitResult.direction))
-            is CarpetedStairBlock -> state
-                .setValue(CarpetedStairBlock.CARPET, carpetColor)
-                .setValue(CarpetedStairBlock.CARPET_SURFACE, CarpetSurface.TREAD)
+            is CarpetedSlabBlock -> {
+                if (!canPlaceOnSlabSurface(hitResult.direction)) return InteractionResult.PASS
+
+                state
+                    .setValue(CarpetedSlabBlock.CARPET, carpetColor)
+                    .setValue(CarpetedSlabBlock.CARPET_SURFACE, CarpetSurface.TOP)
+            }
+            is CarpetedStairBlock -> {
+                if (!canPlaceOnStairTread(state, hitResult.direction)) return InteractionResult.PASS
+
+                state
+                    .setValue(CarpetedStairBlock.CARPET, carpetColor)
+                    .setValue(CarpetedStairBlock.CARPET_SURFACE, CarpetSurface.TREAD)
+            }
             else -> {
                 val slab = ModBlocks.carpetedSlabFor(block)
                 val stair = ModBlocks.carpetedStairFor(block)
 
                 when {
                     slab != null && StateCopyUtil.isSupportedSlabState(state) -> {
-                        StateCopyUtil.copySlabToCarpeted(state, slab, carpetColor, surfaceFromFace(hitResult.direction))
+                        if (!canPlaceOnSlabSurface(hitResult.direction)) return InteractionResult.PASS
+
+                        StateCopyUtil.copySlabToCarpeted(state, slab, carpetColor, CarpetSurface.TOP)
                     }
                     stair != null -> {
+                        if (!canPlaceOnStairTread(state, hitResult.direction)) return InteractionResult.PASS
+
                         StateCopyUtil.copyStairsToCarpeted(state, stair, carpetColor, CarpetSurface.TREAD)
                     }
                     else -> return InteractionResult.PASS
@@ -116,14 +131,18 @@ object CarpetInteractionHandler {
         )
     }
 
-    private fun surfaceFromFace(face: Direction): CarpetSurface {
-        return when (face) {
-            Direction.UP -> CarpetSurface.TOP
-            Direction.DOWN -> CarpetSurface.BOTTOM
-            Direction.NORTH -> CarpetSurface.NORTH
-            Direction.EAST -> CarpetSurface.EAST
-            Direction.SOUTH -> CarpetSurface.SOUTH
-            Direction.WEST -> CarpetSurface.WEST
+    private fun canPlaceOnSlabSurface(face: Direction): Boolean {
+        return face == Direction.UP
+    }
+
+    private fun canPlaceOnStairTread(state: BlockState, face: Direction): Boolean {
+        if (!state.hasProperty(StairBlock.HALF)) {
+            return false
+        }
+
+        return when (state.getValue(StairBlock.HALF)) {
+            Half.BOTTOM -> face == Direction.UP
+            Half.TOP -> face == Direction.DOWN
         }
     }
 }
