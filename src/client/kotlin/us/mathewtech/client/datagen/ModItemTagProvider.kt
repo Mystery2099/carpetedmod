@@ -4,6 +4,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider
 import net.minecraft.core.HolderLookup
 import net.minecraft.core.registries.BuiltInRegistries
+import net.minecraft.tags.ItemTags
+import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Items
 import us.mathewtech.registry.ModItemTags
 import java.util.concurrent.CompletableFuture
@@ -14,5 +16,15 @@ class ModItemTagProvider(
 ) : FabricTagsProvider.ItemTagsProvider(output, registriesFuture) {
     override fun addTags(registries: HolderLookup.Provider) {
         builder(ModItemTags.CARPET_REMOVERS).add(BuiltInRegistries.ITEM.getResourceKey(Items.SHEARS).orElseThrow())
+        builder(ModItemTags.CARPET_DYES)
+            .forceAddTag(ItemTags.DYES)
+            .forceAddTag(ModItemTags.COMMON_DYES)
+            .forceAddTag(ModItemTags.FORGE_DYES)
+
+        DyeColor.entries.forEach { color ->
+            builder(ModItemTags.CARPET_DYES_BY_COLOR.getValue(color))
+                .forceAddTag(ModItemTags.COMMON_DYES_BY_COLOR.getValue(color))
+                .forceAddTag(ModItemTags.FORGE_DYES_BY_COLOR.getValue(color))
+        }
     }
 }

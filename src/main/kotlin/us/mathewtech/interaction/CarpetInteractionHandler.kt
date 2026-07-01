@@ -1,7 +1,6 @@
 package us.mathewtech.interaction
 
 import net.fabricmc.fabric.api.event.player.UseBlockCallback
-import net.minecraft.core.component.DataComponents
 import net.minecraft.sounds.SoundEvents
 import net.minecraft.sounds.SoundSource
 import net.minecraft.core.Direction
@@ -39,7 +38,7 @@ object CarpetInteractionHandler {
             return removeCarpet(player, level, hand, state, hitResult)
         }
 
-        stack.get(DataComponents.DYE)?.let { dyeColor ->
+        CarpetColorUtil.colorFromDyeItemStack(stack)?.let { dyeColor ->
             return dyeCarpet(player, level, hand, state, hitResult, dyeColor)
         }
 
@@ -193,8 +192,8 @@ object CarpetInteractionHandler {
         }
 
         return when (state.getValue(StairBlock.HALF)) {
-            Half.BOTTOM -> face == Direction.UP
-            Half.TOP -> face == Direction.DOWN
+            Half.BOTTOM -> face == Direction.UP || face == state.getValue(StairBlock.FACING)
+            Half.TOP -> face == Direction.DOWN || face == state.getValue(StairBlock.FACING)
         }
     }
 }

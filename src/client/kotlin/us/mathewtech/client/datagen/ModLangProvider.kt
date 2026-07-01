@@ -16,6 +16,7 @@ class ModLangProvider(
         registryLookup: HolderLookup.Provider,
         translationBuilder: TranslationBuilder
     ) {
+        translationBuilder.add("itemGroup.carpeted-mod.carpeted_blocks", "Carpeted Blocks")
         translationBuilder.add("item.carpeted-mod.carpeted_block", "%s Carpeted %s")
 
         ModBlocks.slabsByBase.values.forEach { block ->

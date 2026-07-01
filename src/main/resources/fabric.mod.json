@@ -3,13 +3,12 @@
 	"id": "carpeted-mod",
 	"version": "${version}",
 	"name": "Carpeted Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Adds carpeted variants of vanilla slabs and stairs, with dye recoloring, remover item tags, and Silk Touch support.",
 	"authors": [
-		"Me!"
+		"Mystery2099"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Mystery2099/carpetedmod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/carpeted-mod/icon.png",

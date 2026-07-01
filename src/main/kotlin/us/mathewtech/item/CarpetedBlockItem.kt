@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.state.BlockState
 import org.jspecify.annotations.Nullable
 import us.mathewtech.block.CarpetSurface
+import us.mathewtech.block.CarpetedBlock
 import us.mathewtech.block.CarpetedSlabBlock
 import us.mathewtech.block.CarpetedStairBlock
 import us.mathewtech.registry.ModDataComponents
@@ -24,7 +25,7 @@ class CarpetedBlockItem(
         return Component.translatable(
             "item.carpeted-mod.carpeted_block",
             Component.translatable("color.minecraft.${color.getName()}"),
-            Component.translatable(block.descriptionId)
+            Component.translatable((block as CarpetedBlock).baseBlock.descriptionId)
         )
     }
 
@@ -52,4 +53,3 @@ class CarpetedBlockItem(
         }
     }
 }
-

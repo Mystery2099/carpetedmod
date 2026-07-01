@@ -5,6 +5,7 @@ import net.minecraft.resources.Identifier
 import org.slf4j.LoggerFactory
 import us.mathewtech.interaction.CarpetInteractionHandler
 import us.mathewtech.registry.ModBlocks
+import us.mathewtech.registry.ModCreativeModeTabs
 import us.mathewtech.registry.ModDataComponents
 
 object CarpetedMod : ModInitializer {
@@ -15,6 +16,7 @@ object CarpetedMod : ModInitializer {
 	override fun onInitialize() {
 		ModDataComponents.initialize()
 		ModBlocks.initialize()
+		ModCreativeModeTabs.initialize()
 		CarpetInteractionHandler.initialize()
 		LOGGER.info("Initialized carpeted blocks")
 	}
