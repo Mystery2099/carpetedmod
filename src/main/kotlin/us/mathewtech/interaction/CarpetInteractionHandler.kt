@@ -157,9 +157,7 @@ object CarpetInteractionHandler {
     }
 
     private fun returnOrDropCarpet(player: Player, stack: ItemStack) {
-        if (!player.addItem(stack)) {
-            player.drop(stack, false)
-        }
+        player.inventory.placeItemBackInInventory(stack)
     }
 
     private fun playWoolPlaceSound(level: Level, player: Player, hitResult: BlockHitResult) {
