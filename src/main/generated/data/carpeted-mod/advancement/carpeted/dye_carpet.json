@@ -1,0 +1,22 @@
+{
+  "parent": "carpeted-mod:carpeted/root",
+  "display": {
+    "icon": {
+      "id": "minecraft:red_dye"
+    },
+    "title": {
+      "translate": "advancements.carpeted-mod.dye_carpet.title"
+    },
+    "description": {
+      "translate": "advancements.carpeted-mod.dye_carpet.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "dyed_carpet": {
+      "trigger": "carpeted-mod:dyed_carpet"
+    }
+  }
+}

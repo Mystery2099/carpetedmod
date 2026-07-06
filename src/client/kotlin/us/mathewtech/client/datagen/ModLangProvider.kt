@@ -18,6 +18,21 @@ class ModLangProvider(
     ) {
         translationBuilder.add("itemGroup.carpeted-mod.carpeted_blocks", "Carpeted Blocks")
         translationBuilder.add("item.carpeted-mod.carpeted_block", "%s Carpeted %s")
+        translationBuilder.add("modmenu.carpeted-mod.title", "Carpeted Mod")
+        translationBuilder.add("modmenu.carpeted-mod.line.apply", "Use vanilla carpet on supported slabs and stairs to apply carpet.")
+        translationBuilder.add("modmenu.carpeted-mod.line.dye", "Use dye on carpeted blocks to recolor the carpet.")
+        translationBuilder.add("modmenu.carpeted-mod.line.remove", "Use shears, or another item in carpeted-mod:carpet_removers, to remove carpet.")
+        translationBuilder.add("modmenu.carpeted-mod.line.silk_touch", "Silk Touch preserves carpeted block items and their carpet color.")
+        translationBuilder.add("modmenu.carpeted-mod.line.tags", "Pack makers can adjust carpeted-mod:carpet_dyes and carpeted-mod:carpet_removers.")
+        translationBuilder.add("modmenu.carpeted-mod.line.scope", "Prototype 1 supports vanilla carpets, registered vanilla slabs, and registered vanilla stairs.")
+        translationBuilder.add("advancements.carpeted-mod.root.title", "Soft Steps")
+        translationBuilder.add("advancements.carpeted-mod.root.description", "Apply carpet to a slab or stair.")
+        translationBuilder.add("advancements.carpeted-mod.dye_carpet.title", "A Fresh Shade")
+        translationBuilder.add("advancements.carpeted-mod.dye_carpet.description", "Use dye to recolor a carpeted slab or stair.")
+        translationBuilder.add("advancements.carpeted-mod.remove_carpet.title", "Clean Removal")
+        translationBuilder.add("advancements.carpeted-mod.remove_carpet.description", "Use shears to remove carpet from a slab or stair.")
+        translationBuilder.add("advancements.carpeted-mod.silk_touch_carpeted_block.title", "Move-In Ready")
+        translationBuilder.add("advancements.carpeted-mod.silk_touch_carpeted_block.description", "Break a carpeted slab or stair with Silk Touch.")
 
         ModBlocks.slabsByBase.values.forEach { block ->
             translationBuilder.add(block, "Carpeted ${displayName(block)}")

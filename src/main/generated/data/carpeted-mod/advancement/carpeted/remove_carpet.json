@@ -1,0 +1,22 @@
+{
+  "parent": "carpeted-mod:carpeted/dye_carpet",
+  "display": {
+    "icon": {
+      "id": "minecraft:shears"
+    },
+    "title": {
+      "translate": "advancements.carpeted-mod.remove_carpet.title"
+    },
+    "description": {
+      "translate": "advancements.carpeted-mod.remove_carpet.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "removed_carpet": {
+      "trigger": "carpeted-mod:removed_carpet"
+    }
+  }
+}

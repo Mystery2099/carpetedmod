@@ -20,6 +20,7 @@ import us.mathewtech.block.CarpetSurface
 import us.mathewtech.block.CarpetedSlabBlock
 import us.mathewtech.block.CarpetedStairBlock
 import us.mathewtech.registry.ModBlocks
+import us.mathewtech.registry.ModCriteria
 import us.mathewtech.registry.ModItemTags
 import us.mathewtech.util.CarpetColorUtil
 import us.mathewtech.util.StateCopyUtil
@@ -83,6 +84,9 @@ object CarpetInteractionHandler {
         if (!player.isCreative) {
             player.getItemInHand(hand).consume(1, player)
         }
+        if (player is net.minecraft.server.level.ServerPlayer) {
+            ModCriteria.appliedCarpet(player)
+        }
         playWoolPlaceSound(level, player, hitResult)
 
         return InteractionResult.SUCCESS_SERVER
@@ -118,6 +122,9 @@ object CarpetInteractionHandler {
         if (!player.isCreative) {
             player.getItemInHand(hand).consume(1, player)
         }
+        if (player is net.minecraft.server.level.ServerPlayer) {
+            ModCriteria.dyedCarpet(player)
+        }
         playWoolPlaceSound(level, player, hitResult)
 
         return InteractionResult.SUCCESS_SERVER
@@ -141,6 +148,9 @@ object CarpetInteractionHandler {
         val toolStack = player.getItemInHand(hand)
         if (!player.isCreative && toolStack.isDamageableItem) {
             toolStack.hurtAndBreak(1, player, hand)
+        }
+        if (player is net.minecraft.server.level.ServerPlayer) {
+            ModCriteria.removedCarpet(player)
         }
         playShearsSound(level, player, hitResult)
 

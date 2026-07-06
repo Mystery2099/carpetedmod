@@ -1,4 +1,12 @@
 {
+  "advancements.carpeted-mod.dye_carpet.description": "Use dye to recolor a carpeted slab or stair.",
+  "advancements.carpeted-mod.dye_carpet.title": "A Fresh Shade",
+  "advancements.carpeted-mod.remove_carpet.description": "Use shears to remove carpet from a slab or stair.",
+  "advancements.carpeted-mod.remove_carpet.title": "Clean Removal",
+  "advancements.carpeted-mod.root.description": "Apply carpet to a slab or stair.",
+  "advancements.carpeted-mod.root.title": "Soft Steps",
+  "advancements.carpeted-mod.silk_touch_carpeted_block.description": "Break a carpeted slab or stair with Silk Touch.",
+  "advancements.carpeted-mod.silk_touch_carpeted_block.title": "Move-In Ready",
   "block.carpeted-mod.acacia_slab": "Carpeted Acacia Slab",
   "block.carpeted-mod.acacia_stairs": "Carpeted Acacia Stairs",
   "block.carpeted-mod.andesite_slab": "Carpeted Andesite Slab",
@@ -92,5 +100,12 @@
   "block.carpeted-mod.stone_slab": "Carpeted Stone Slab",
   "block.carpeted-mod.stone_stairs": "Carpeted Stone Stairs",
   "item.carpeted-mod.carpeted_block": "%s Carpeted %s",
-  "itemGroup.carpeted-mod.carpeted_blocks": "Carpeted Blocks"
+  "itemGroup.carpeted-mod.carpeted_blocks": "Carpeted Blocks",
+  "modmenu.carpeted-mod.line.apply": "Use vanilla carpet on supported slabs and stairs to apply carpet.",
+  "modmenu.carpeted-mod.line.dye": "Use dye on carpeted blocks to recolor the carpet.",
+  "modmenu.carpeted-mod.line.remove": "Use shears, or another item in carpeted-mod:carpet_removers, to remove carpet.",
+  "modmenu.carpeted-mod.line.scope": "Prototype 1 supports vanilla carpets, registered vanilla slabs, and registered vanilla stairs.",
+  "modmenu.carpeted-mod.line.silk_touch": "Silk Touch preserves carpeted block items and their carpet color.",
+  "modmenu.carpeted-mod.line.tags": "Pack makers can adjust carpeted-mod:carpet_dyes and carpeted-mod:carpet_removers.",
+  "modmenu.carpeted-mod.title": "Carpeted Mod"
 }

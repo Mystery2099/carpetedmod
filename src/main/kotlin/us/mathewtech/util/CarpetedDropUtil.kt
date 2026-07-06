@@ -1,6 +1,7 @@
 package us.mathewtech.util
 
 import net.minecraft.core.component.DataComponents
+import net.minecraft.server.level.ServerPlayer
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.item.enchantment.Enchantments
 import net.minecraft.world.item.enchantment.ItemEnchantments
@@ -10,10 +11,13 @@ import net.minecraft.world.level.storage.loot.LootParams
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams
 import us.mathewtech.block.CarpetedBlock
 import us.mathewtech.item.CarpetedItemStacks
+import us.mathewtech.registry.ModCriteria
 
 object CarpetedDropUtil {
     fun drops(block: Block, carpeted: CarpetedBlock, state: BlockState, params: LootParams.Builder): List<ItemStack> {
         if (hasSilkTouch(params)) {
+            (params.getOptionalParameter(LootContextParams.THIS_ENTITY) as? ServerPlayer)?.let(ModCriteria::silkTouchedCarpetedBlock)
+
             return listOf(
                 CarpetedItemStacks.create(
                     block,
