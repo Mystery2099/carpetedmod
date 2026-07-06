@@ -3,6 +3,7 @@ package us.mathewtech
 import net.fabricmc.api.ModInitializer
 import net.minecraft.resources.Identifier
 import org.slf4j.LoggerFactory
+import us.mathewtech.config.CarpetedModConfig
 import us.mathewtech.interaction.CarpetInteractionHandler
 import us.mathewtech.registry.ModBlocks
 import us.mathewtech.registry.ModCreativeModeTabs
@@ -15,6 +16,7 @@ object CarpetedMod : ModInitializer {
 	private val LOGGER = LoggerFactory.getLogger(MOD_ID)
 
 	override fun onInitialize() {
+		CarpetedModConfig.initialize()
 		ModDataComponents.initialize()
 		ModCriteria.initialize()
 		ModBlocks.initialize()

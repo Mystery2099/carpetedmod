@@ -37,6 +37,12 @@
 				"value": "us.mathewtech.client.integration.modmenu.CarpetedModMenuIntegration",
 				"adapter": "kotlin"
 			}
+		],
+		"rei_client": [
+			{
+				"value": "us.mathewtech.client.integration.rei.CarpetedReiClientPlugin",
+				"adapter": "kotlin"
+			}
 		]
 	},
 	"depends": {
@@ -47,6 +53,7 @@
 		"fabric-language-kotlin": "*"
 	},
 	"suggests": {
+		"cloth-config": "*",
 		"modmenu": "*",
 		"roughlyenoughitems": "*",
 		"emi": "*",

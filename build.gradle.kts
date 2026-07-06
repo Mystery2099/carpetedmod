@@ -48,6 +48,9 @@ dependencies {
 	compileOnly("com.terraformersmc:modmenu:${providers.gradleProperty("modmenu_version").get()}")
 	add("localRuntime", "com.terraformersmc:modmenu:${providers.gradleProperty("modmenu_version").get()}")
 
+	compileOnly("me.shedaniel.cloth:cloth-config-fabric:${providers.gradleProperty("cloth_config_version").get()}")
+	add("localRuntime", "me.shedaniel.cloth:cloth-config-fabric:${providers.gradleProperty("cloth_config_version").get()}")
+
 	compileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${providers.gradleProperty("rei_version").get()}")
 	add("localRuntime", "me.shedaniel:RoughlyEnoughItems-fabric:${providers.gradleProperty("rei_version").get()}")
 }

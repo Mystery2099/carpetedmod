@@ -19,6 +19,7 @@ import net.minecraft.world.phys.BlockHitResult
 import us.mathewtech.block.CarpetSurface
 import us.mathewtech.block.CarpetedSlabBlock
 import us.mathewtech.block.CarpetedStairBlock
+import us.mathewtech.config.CarpetedModConfig
 import us.mathewtech.registry.ModBlocks
 import us.mathewtech.registry.ModCriteria
 import us.mathewtech.registry.ModItemTags
@@ -35,12 +36,18 @@ object CarpetInteractionHandler {
         val state = level.getBlockState(pos)
         val stack = player.getItemInHand(hand)
 
-        if (stack.`is`(ModItemTags.CARPET_REMOVERS)) {
+        if (stack.`is`(ModItemTags.CARPET_REMOVERS) && CarpetedModConfig.canRemoveCarpet()) {
             return removeCarpet(player, level, hand, state, hitResult)
         }
 
-        CarpetColorUtil.colorFromDyeItemStack(stack)?.let { dyeColor ->
+        if (CarpetedModConfig.canRecolorCarpet()) {
+            CarpetColorUtil.colorFromDyeItemStack(stack)?.let { dyeColor ->
             return dyeCarpet(player, level, hand, state, hitResult, dyeColor)
+            }
+        }
+
+        if (!CarpetedModConfig.canApplyCarpet()) {
+            return InteractionResult.PASS
         }
 
         val carpetColor = CarpetColorUtil.colorFromCarpetItem(stack.item) ?: return InteractionResult.PASS
