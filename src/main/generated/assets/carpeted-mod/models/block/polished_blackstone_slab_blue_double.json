@@ -1,9 +1,0 @@
-{
-  "parent": "carpeted-mod:block/double_carpeted_slab",
-  "textures": {
-    "bottom": "minecraft:block/polished_blackstone",
-    "carpet": "minecraft:block/blue_wool",
-    "side": "minecraft:block/polished_blackstone",
-    "top": "minecraft:block/polished_blackstone"
-  }
-}

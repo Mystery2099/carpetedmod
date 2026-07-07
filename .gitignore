@@ -32,6 +32,9 @@ bin/
 
 run/
 
+# datagen output (run ./gradlew runDatagen after clone)
+src/main/generated/
+
 # java
 
 hs_err_*.log

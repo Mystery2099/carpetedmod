@@ -1,9 +1,0 @@
-{
-  "parent": "carpeted-mod:block/carpeted_stairs",
-  "textures": {
-    "bottom": "minecraft:block/sandstone_bottom",
-    "carpet": "minecraft:block/pink_wool",
-    "side": "minecraft:block/sandstone",
-    "top": "minecraft:block/sandstone_top"
-  }
-}

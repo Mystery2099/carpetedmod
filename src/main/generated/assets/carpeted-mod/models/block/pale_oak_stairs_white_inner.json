@@ -1,9 +1,0 @@
-{
-  "parent": "carpeted-mod:block/inner_carpeted_stairs",
-  "textures": {
-    "bottom": "minecraft:block/pale_oak_planks",
-    "carpet": "minecraft:block/white_wool",
-    "side": "minecraft:block/pale_oak_planks",
-    "top": "minecraft:block/pale_oak_planks"
-  }
-}

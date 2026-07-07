@@ -1,9 +1,0 @@
-{
-  "parent": "carpeted-mod:block/top_carpeted_slab",
-  "textures": {
-    "bottom": "minecraft:block/bamboo_mosaic",
-    "carpet": "minecraft:block/light_gray_wool",
-    "side": "minecraft:block/bamboo_mosaic",
-    "top": "minecraft:block/bamboo_mosaic"
-  }
-}

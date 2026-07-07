@@ -1,9 +1,0 @@
-{
-  "parent": "carpeted-mod:block/double_carpeted_slab",
-  "textures": {
-    "bottom": "minecraft:block/prismarine_bricks",
-    "carpet": "minecraft:block/green_wool",
-    "side": "minecraft:block/prismarine_bricks",
-    "top": "minecraft:block/prismarine_bricks"
-  }
-}

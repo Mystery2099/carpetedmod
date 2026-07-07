@@ -1,9 +1,0 @@
-{
-  "parent": "carpeted-mod:block/top_carpeted_slab",
-  "textures": {
-    "bottom": "minecraft:block/red_nether_bricks",
-    "carpet": "minecraft:block/magenta_wool",
-    "side": "minecraft:block/red_nether_bricks",
-    "top": "minecraft:block/red_nether_bricks"
-  }
-}

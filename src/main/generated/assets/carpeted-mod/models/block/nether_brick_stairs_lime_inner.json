@@ -1,9 +1,0 @@
-{
-  "parent": "carpeted-mod:block/inner_carpeted_stairs",
-  "textures": {
-    "bottom": "minecraft:block/nether_bricks",
-    "carpet": "minecraft:block/lime_wool",
-    "side": "minecraft:block/nether_bricks",
-    "top": "minecraft:block/nether_bricks"
-  }
-}

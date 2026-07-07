@@ -1,9 +1,0 @@
-{
-  "parent": "carpeted-mod:block/carpeted_slab",
-  "textures": {
-    "bottom": "minecraft:block/dark_oak_planks",
-    "carpet": "minecraft:block/light_gray_wool",
-    "side": "minecraft:block/dark_oak_planks",
-    "top": "minecraft:block/dark_oak_planks"
-  }
-}

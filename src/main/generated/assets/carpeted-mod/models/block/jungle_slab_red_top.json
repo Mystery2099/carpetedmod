@@ -1,9 +1,0 @@
-{
-  "parent": "carpeted-mod:block/top_carpeted_slab",
-  "textures": {
-    "bottom": "minecraft:block/jungle_planks",
-    "carpet": "minecraft:block/red_wool",
-    "side": "minecraft:block/jungle_planks",
-    "top": "minecraft:block/jungle_planks"
-  }
-}
