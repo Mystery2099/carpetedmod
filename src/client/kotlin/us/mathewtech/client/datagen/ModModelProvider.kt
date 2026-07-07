@@ -45,11 +45,7 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
     }
 
     override fun generateItemModels(itemModelGenerators: ItemModelGenerators) {
-        ModBlocks.slabsByBase.values.forEach { block ->
-            itemModelGenerators.itemModelOutput.accept(block.asItem(), colorSelectingItemModel(block))
-        }
-
-        ModBlocks.stairsByBase.values.forEach { block ->
+        (ModBlocks.slabsByBase.values + ModBlocks.stairsByBase.values).forEach { block ->
             itemModelGenerators.itemModelOutput.accept(block.asItem(), colorSelectingItemModel(block))
         }
     }
@@ -63,30 +59,9 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
     )
 
     private fun createSlabModels(generators: BlockModelGenerators, base: SlabBlock, block: CarpetedSlabBlock) {
-        val bottomByColor = DyeColor.entries.associateWith { color ->
-            val model = SLAB_TEMPLATE.create(
-                modelId(block, color.getName()),
-                textureMapping(base, color),
-                generators.modelOutput
-            )
-            BlockModelGenerators.plainVariant(model)
-        }
-        val topByColor = DyeColor.entries.associateWith { color ->
-            val model = TOP_SLAB_TEMPLATE.create(
-                modelId(block, "${color.getName()}_top"),
-                textureMapping(base, color),
-                generators.modelOutput
-            )
-            BlockModelGenerators.plainVariant(model)
-        }
-        val doubleByColor = DyeColor.entries.associateWith { color ->
-            val model = DOUBLE_SLAB_TEMPLATE.create(
-                modelId(block, "${color.getName()}_double"),
-                textureMapping(base, color),
-                generators.modelOutput
-            )
-            BlockModelGenerators.plainVariant(model)
-        }
+        val bottomByColor = variantsByColor(generators, base, block, SLAB_TEMPLATE) { it.getName() }
+        val topByColor = variantsByColor(generators, base, block, TOP_SLAB_TEMPLATE) { "${it.getName()}_top" }
+        val doubleByColor = variantsByColor(generators, base, block, DOUBLE_SLAB_TEMPLATE) { "${it.getName()}_double" }
 
         generators.blockStateOutput.accept(
             MultiVariantGenerator.dispatch(block).with(
@@ -106,21 +81,9 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
     }
 
     private fun createStairModels(generators: BlockModelGenerators, base: StairBlock, block: CarpetedStairBlock) {
-        val straightByColor = DyeColor.entries.associateWith { color ->
-            BlockModelGenerators.plainVariant(
-                STAIR_TEMPLATE.create(modelId(block, color.getName()), textureMapping(base, color), generators.modelOutput)
-            )
-        }
-        val innerByColor = DyeColor.entries.associateWith { color ->
-            BlockModelGenerators.plainVariant(
-                INNER_STAIR_TEMPLATE.create(modelId(block, "${color.getName()}_inner"), textureMapping(base, color), generators.modelOutput)
-            )
-        }
-        val outerByColor = DyeColor.entries.associateWith { color ->
-            BlockModelGenerators.plainVariant(
-                OUTER_STAIR_TEMPLATE.create(modelId(block, "${color.getName()}_outer"), textureMapping(base, color), generators.modelOutput)
-            )
-        }
+        val straightByColor = variantsByColor(generators, base, block, STAIR_TEMPLATE) { it.getName() }
+        val innerByColor = variantsByColor(generators, base, block, INNER_STAIR_TEMPLATE) { "${it.getName()}_inner" }
+        val outerByColor = variantsByColor(generators, base, block, OUTER_STAIR_TEMPLATE) { "${it.getName()}_outer" }
 
         generators.blockStateOutput.accept(
             MultiVariantGenerator.dispatch(block).with(
@@ -142,6 +105,19 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
                 }
             )
         )
+    }
+
+    private fun variantsByColor(
+        generators: BlockModelGenerators,
+        base: Block,
+        block: Block,
+        template: ModelTemplate,
+        suffix: (DyeColor) -> String
+    ): Map<DyeColor, MultiVariant> {
+        return DyeColor.entries.associateWith { color ->
+            val model = template.create(modelId(block, suffix(color)), textureMapping(base, color), generators.modelOutput)
+            BlockModelGenerators.plainVariant(model)
+        }
     }
 
     private fun textureMapping(base: Block, carpetColor: DyeColor): TextureMapping {
@@ -280,8 +256,9 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
     private object VanillaModelTextures {
         fun fromBlockModel(block: Block): BlockModelTextures {
             val blockId = BuiltInRegistries.BLOCK.getKey(block)
-            val textures = readTextures(blockId)
-            val fallback = Identifier.fromNamespaceAndPath(blockId.namespace, "block/${blockId.path}")
+            val modelId = vanillaModelId(blockId)
+            val textures = readTextures(modelId)
+            val fallback = Identifier.fromNamespaceAndPath(modelId.namespace, "block/${modelId.path}")
 
             return BlockModelTextures(
                 bottom = resolveTexture(textures, "bottom") ?: resolveTexture(textures, "all") ?: fallback,
@@ -298,6 +275,14 @@ class ModModelProvider(output: FabricPackOutput) : FabricModelProvider(output) {
             return resolveTexture(textures, "wool")
                 ?: resolveTexture(textures, "all")
                 ?: fallback
+        }
+
+        private fun vanillaModelId(blockId: Identifier): Identifier {
+            if (blockId.path.startsWith("waxed_")) {
+                return Identifier.fromNamespaceAndPath(blockId.namespace, blockId.path.removePrefix("waxed_"))
+            }
+
+            return blockId
         }
 
         private fun readTextures(blockId: Identifier): JsonObject {

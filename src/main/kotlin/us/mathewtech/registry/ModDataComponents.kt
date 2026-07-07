@@ -14,9 +14,5 @@ object ModDataComponents {
             .persistent(CarpetSurface.CODEC)
             .build()
     )
-
-    fun initialize() {
-        // Loads the object so component registration happens during mod initialization.
-    }
 }
 

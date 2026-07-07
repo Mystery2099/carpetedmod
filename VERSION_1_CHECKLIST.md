@@ -1,4 +1,4 @@
-# Prototype 1 Checklist
+# Version 1 Checklist
 
 Use this file to record in-game test results. Mark items with `[x]` when they pass, and add notes under each section when something fails or feels wrong.
 
@@ -115,7 +115,17 @@ Notes:
 - [x] Explosion resistance feels consistent with the base block.
 - [x] Sound/friction/other copied block properties feel consistent with the base block.
 
-Notes: I'm thinking maybe we should include a creative tab containing every possible slab and stair combo to make things easy for creative players. I'm also thinking that I like how with a mod like roughtly enough Items and Just enough Items, a player can see the "recipe" for a stripped log being stripping, and definelty want that to work on carpeting as well.
+Notes: Creative tab is in. REI shows carpeting, recoloring, and removal from recipe data.
+
+## REI
+
+- [x] Carpeting category shows base block + carpet ingredient → carpeted block.
+- [x] Recoloring category shows carpeted block + dye → recolored block.
+- [x] Removal category shows carpeted block + remover → base block + carpet.
+- [x] Displays come from `RecipeManager`, not hardcoded per-block lists.
+- [x] Tag ingredients expand in REI (e.g. `#minecraft:wool_carpets`).
+
+Notes:
 
 
 ## Generated Data
@@ -124,11 +134,13 @@ Notes: I'm thinking maybe we should include a creative tab containing every poss
 - [x] Generated blockstates are stable.
 - [x] Generated block models are stable.
 - [x] Generated item definitions are stable.
-- [x] Generated loot tables are stable or intentionally superseded by code drops.
+- [x] Generated recipes are stable (carpeting, recoloring, removal).
+- [x] Generated advancements are stable (root, dye, remove, silk touch).
 - [x] Generated lang file is stable.
 - [x] Generated block tags are stable.
-- [x] Generated item tags are stable.
+- [x] Generated item tags are stable (including forge dye compatibility).
 - [x] No generated files churn unexpectedly after rerunning datagen.
+- [x] No loot table datagen — drops handled in code via `CarpetedDropUtil`.
 
 Notes:
 
@@ -152,21 +164,23 @@ Notes:
 - [x] Document carpet remover item tag.
 - [x] Document Silk Touch behavior.
 - [x] Document supported block scope.
-- [x] Document known Prototype 1 limitations.
+- [x] Document known Version 1 limitations.
+- [x] Document REI integration and recipe-driven displays.
+- [x] Document code-driven drops (no loot tables).
+- [x] Document advancements.
 
 Notes:
-README has been updated for the Prototype 1 release. It documents normal player
-interactions, pack-maker tags, Silk Touch behavior, scope, and known technical
-notes without going deep into implementation details.
+README and pack-maker docs cover player interactions, tags, recipes, drops,
+REI, and scope without going deep into implementation details.
 
 
-## Final Prototype 1 Decision
+## Final Version 1 Decision
 
 - [ ] Core gameplay feels natural.
 - [ ] No known item loss bugs remain.
 - [ ] No known duplication bugs remain.
-- [ ] Models are acceptable for Prototype 1.
-- [ ] Drops and Silk Touch are acceptable for Prototype 1.
-- [ ] Architecture feels suitable to carry into Prototype 2.
+- [ ] Models are acceptable for Version 1.
+- [ ] Drops and Silk Touch are acceptable for Version 1.
+- [ ] Architecture feels suitable to carry into Version 2.
 
 Final notes:

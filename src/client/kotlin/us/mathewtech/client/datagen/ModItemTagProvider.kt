@@ -7,6 +7,7 @@ import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Items
+import net.minecraft.world.level.block.Blocks
 import us.mathewtech.registry.ModItemTags
 import java.util.concurrent.CompletableFuture
 
@@ -19,12 +20,15 @@ class ModItemTagProvider(
         builder(ModItemTags.CARPET_DYES)
             .forceAddTag(ItemTags.DYES)
             .forceAddTag(ModItemTags.COMMON_DYES)
-            .forceAddTag(ModItemTags.FORGE_DYES)
+
+        DyeColor.entries.forEach { color ->
+            builder(ModItemTags.CARPETS_BY_COLOR.getValue(color))
+                .add(BuiltInRegistries.ITEM.getResourceKey(Blocks.CARPET.pick(color).asItem()).orElseThrow())
+        }
 
         DyeColor.entries.forEach { color ->
             builder(ModItemTags.CARPET_DYES_BY_COLOR.getValue(color))
                 .forceAddTag(ModItemTags.COMMON_DYES_BY_COLOR.getValue(color))
-                .forceAddTag(ModItemTags.FORGE_DYES_BY_COLOR.getValue(color))
         }
     }
 }

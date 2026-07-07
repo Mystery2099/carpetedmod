@@ -9,6 +9,7 @@ import us.mathewtech.registry.ModBlocks
 import us.mathewtech.registry.ModCreativeModeTabs
 import us.mathewtech.registry.ModCriteria
 import us.mathewtech.registry.ModDataComponents
+import us.mathewtech.registry.ModRecipes
 
 object CarpetedMod : ModInitializer {
 	const val MOD_ID: String = "carpeted-mod"
@@ -17,9 +18,10 @@ object CarpetedMod : ModInitializer {
 
 	override fun onInitialize() {
 		CarpetedModConfig.initialize()
-		ModDataComponents.initialize()
-		ModCriteria.initialize()
+		ModDataComponents.CARPET_SURFACE
+		ModCriteria.APPLIED_CARPET
 		ModBlocks.initialize()
+		ModRecipes.initialize()
 		ModCreativeModeTabs.initialize()
 		CarpetInteractionHandler.initialize()
 		LOGGER.info("Initialized carpeted blocks")

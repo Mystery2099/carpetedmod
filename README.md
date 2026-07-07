@@ -2,8 +2,8 @@
 
 A Fabric mod that lets you put carpet on vanilla slabs and stairs.
 
-This is Prototype 1. It focuses on vanilla slabs, vanilla stairs, and vanilla
-carpets so the core behavior can be tested before broader mod compatibility.
+Version 1 focuses on vanilla slabs, vanilla stairs, and vanilla carpets. Broader
+mod compatibility is planned for a later major version.
 
 ## Features
 
@@ -15,6 +15,8 @@ carpets so the core behavior can be tested before broader mod compatibility.
 - Drop a color-preserving carpeted block item when broken with Silk Touch.
 - Pick block preserves the carpet color in creative mode.
 - Includes a creative tab with every carpeted slab and stair color.
+- Four advancements for applying carpet, dyeing, removing, and Silk Touch.
+- REI support (optional): carpeting, recoloring, and removal categories built from recipe data.
 
 ## Interactions
 
@@ -38,13 +40,16 @@ first, or use dye to recolor it.
 
 Pack makers can adjust these item tags:
 
+- `minecraft:wool_carpets`: items that can apply carpet.
+- `carpeted-mod:carpets/<color>`: maps a non-vanilla carpet item to a color.
+  Vanilla carpets are recognized automatically.
 - `carpeted-mod:carpet_removers`: items that remove carpet. Contains
   `minecraft:shears` by default. Damageable items lose durability in survival;
   non-damageable items still work.
 - `carpeted-mod:carpet_dyes`: items allowed to recolor carpeted blocks. Includes
-  `#minecraft:dyes`, `#c:dyes`, and `#forge:dyes` by default.
-- `carpeted-mod:carpet_dyes/<color>`: fallback color tags. Each one includes the
-  matching `#c:dyes/<color>` and `#forge:dyes/<color>` tag.
+  `#minecraft:dyes` and `#c:dyes` by default.
+- `carpeted-mod:carpet_dyes/<color>`: maps a dye item to a color. Datagen wires in
+  `#c:dyes/<color>` for each color.
 
 An item with Minecraft's `minecraft:dye` data component still needs to be in
 `carpeted-mod:carpet_dyes`. If it is not in the tag, it will not recolor
@@ -52,10 +57,10 @@ carpeted blocks.
 
 ## Scope
 
-Prototype 1 supports registered vanilla stairs, registered vanilla slabs, and
+Version 1 supports registered vanilla stairs, registered vanilla slabs, and
 vanilla carpets.
 
-Out of scope for this prototype:
+Out of scope for Version 1:
 
 - automatic modded stair/slab support
 - modded carpet support
@@ -64,14 +69,16 @@ Out of scope for this prototype:
 - block entities
 - multi-loader support
 
-Those are candidates for Prototype 2.
+Those are candidates for Version 2.
 
 ## Known Notes
 
 - Carpeted blocks are wrapper blocks, not block entities.
 - Carpeted block items keep their color using item data components.
-- Loot tables are generated, but drops are handled in code so Silk Touch can
-  preserve the carpet color.
+- Drops come from `getDrops()` and `CarpetedDropUtil`, not loot tables. That
+  keeps Silk Touch color preservation in one place.
+- With REI installed, custom carpeting/recoloring/removal recipes show up
+  automatically in the matching categories.
 
 ## Requirements
 
@@ -83,17 +90,19 @@ Those are candidates for Prototype 2.
 
 ## Building
 
-```sh
-./gradlew build
-```
-
-The built jar will be in `build/libs`.
-
-Run data generation with a Java version compatible with Minecraft 26.2:
+After cloning, generate assets and data before building or running the client:
 
 ```sh
 ./gradlew runDatagen
 ```
+
+Then build:
+
+```sh
+./gradlew build
+```
+
+The built jar will be in `build/libs`. Datagen requires Java 25 or newer (same as the mod).
 
 ## License
 

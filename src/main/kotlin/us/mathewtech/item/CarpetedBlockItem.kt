@@ -20,12 +20,14 @@ class CarpetedBlockItem(
     block: Block,
     properties: Item.Properties
 ) : BlockItem(block, properties) {
+    private val carpetedBlock = block as CarpetedBlock
+
     override fun getName(itemStack: ItemStack): Component {
         val color = itemStack.get(DataComponents.DYE) ?: return super.getName(itemStack)
         return Component.translatable(
             "item.carpeted-mod.carpeted_block",
             Component.translatable("color.minecraft.${color.getName()}"),
-            Component.translatable((block as CarpetedBlock).baseBlock.descriptionId)
+            Component.translatable(carpetedBlock.baseBlock.descriptionId)
         )
     }
 

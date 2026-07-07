@@ -3,25 +3,52 @@ package us.mathewtech.util
 import net.minecraft.core.component.DataComponents
 import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.resources.Identifier
+import net.minecraft.tags.ItemTags
 import net.minecraft.world.item.DyeColor
 import net.minecraft.world.item.Item
 import net.minecraft.world.item.ItemStack
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
-import net.minecraft.world.level.block.ColorCollection
 import us.mathewtech.registry.ModItemTags
+import java.util.IdentityHashMap
 
 object CarpetColorUtil {
-    fun colorFromCarpetItem(item: Item): DyeColor? {
-        var result: DyeColor? = null
+    private val carpetItemsByColor: Array<Item> = DyeColor.entries
+        .map { Blocks.CARPET.pick(it).asItem() }
+        .toTypedArray()
+    private val dyeItemsByColor: Array<Item> = DyeColor.entries
+        .map { color ->
+            BuiltInRegistries.ITEM.getValue(
+                Identifier.fromNamespaceAndPath("minecraft", "${color.getName()}_dye")
+            )
+        }
+        .toTypedArray()
+    private val carpetColorByItem = IdentityHashMap<Item, DyeColor>(carpetItemsByColor.size)
+    private val dyeColorByItem = IdentityHashMap<Item, DyeColor>(dyeItemsByColor.size)
 
-        ColorCollection.VALUES.forEach { color ->
-            if (Blocks.CARPET.pick(color).asItem() == item) {
-                result = color
+    init {
+        DyeColor.entries.forEachIndexed { index, color ->
+            carpetColorByItem[carpetItemsByColor[index]] = color
+            dyeColorByItem[dyeItemsByColor[index]] = color
+        }
+    }
+
+    fun colorFromCarpetItem(item: Item): DyeColor? {
+        carpetColorByItem[item]?.let { return it }
+
+        val stack = ItemStack(item)
+        if (!stack.`is`(ItemTags.WOOL_CARPETS)) {
+            return null
+        }
+
+        for (color in DyeColor.entries) {
+            if (stack.`is`(ModItemTags.CARPETS_BY_COLOR.getValue(color))) {
+                carpetColorByItem[item] = color
+                return color
             }
         }
 
-        return result
+        return null
     }
 
     fun colorFromDyeItemStack(stack: ItemStack): DyeColor? {
@@ -30,13 +57,14 @@ object CarpetColorUtil {
         }
 
         stack.get(DataComponents.DYE)?.let { return it }
+        dyeColorByItem[stack.item]?.let { return it }
 
-        DyeColor.entries.forEach { color ->
+        for (color in DyeColor.entries) {
             if (
                 stack.`is`(ModItemTags.CARPET_DYES_BY_COLOR.getValue(color)) ||
-                stack.`is`(ModItemTags.COMMON_DYES_BY_COLOR.getValue(color)) ||
-                stack.`is`(ModItemTags.FORGE_DYES_BY_COLOR.getValue(color))
+                stack.`is`(ModItemTags.COMMON_DYES_BY_COLOR.getValue(color))
             ) {
+                dyeColorByItem[stack.item] = color
                 return color
             }
         }
@@ -49,12 +77,10 @@ object CarpetColorUtil {
     }
 
     fun carpetItem(color: DyeColor): Item {
-        return carpetBlock(color).asItem()
+        return carpetItemsByColor[color.ordinal]
     }
 
     fun dyeItem(color: DyeColor): Item {
-        return BuiltInRegistries.ITEM.getValue(
-            Identifier.fromNamespaceAndPath("minecraft", "${color.getName()}_dye")
-        )
+        return dyeItemsByColor[color.ordinal]
     }
 }

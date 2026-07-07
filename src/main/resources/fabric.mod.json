@@ -38,6 +38,12 @@
 				"adapter": "kotlin"
 			}
 		],
+		"rei_common": [
+			{
+				"value": "us.mathewtech.integration.rei.CarpetedReiCommonPlugin",
+				"adapter": "kotlin"
+			}
+		],
 		"rei_client": [
 			{
 				"value": "us.mathewtech.client.integration.rei.CarpetedReiClientPlugin",

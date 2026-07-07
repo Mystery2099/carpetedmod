@@ -12,11 +12,16 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParams
 import us.mathewtech.block.CarpetedBlock
 import us.mathewtech.config.CarpetedModConfig
 import us.mathewtech.item.CarpetedItemStacks
+import us.mathewtech.registry.ModBlockTags
 import us.mathewtech.registry.ModCriteria
 
 object CarpetedDropUtil {
     fun drops(block: Block, carpeted: CarpetedBlock, state: BlockState, params: LootParams.Builder): List<ItemStack> {
-        if (CarpetedModConfig.preservesSilkTouchDrops() && hasSilkTouch(params)) {
+        if (
+            CarpetedModConfig.preservesSilkTouchDrops() &&
+            !state.`is`(ModBlockTags.DISABLE_SILK_TOUCH_PRESERVATION) &&
+            hasSilkTouch(params)
+        ) {
             (params.getOptionalParameter(LootContextParams.THIS_ENTITY) as? ServerPlayer)?.let(ModCriteria::silkTouchedCarpetedBlock)
 
             return listOf(

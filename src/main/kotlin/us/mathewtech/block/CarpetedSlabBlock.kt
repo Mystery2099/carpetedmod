@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.VoxelShape
 import us.mathewtech.item.CarpetedItemStacks
 import us.mathewtech.util.CarpetedDropUtil
 
-class CarpetedSlabBlock(
+open class CarpetedSlabBlock(
     override val baseBlock: Block,
     properties: Properties
 ) : SlabBlock(properties), CarpetedBlock {

@@ -7,8 +7,11 @@ import net.minecraft.resources.ResourceKey
 import net.minecraft.network.chat.Component
 import net.minecraft.world.item.CreativeModeTab
 import net.minecraft.world.item.DyeColor
+import net.minecraft.world.item.ItemStack
+import net.minecraft.world.level.block.Block
 import us.mathewtech.CarpetedMod
 import us.mathewtech.block.CarpetSurface
+import us.mathewtech.block.CarpetedBlock
 import us.mathewtech.item.CarpetedItemStacks
 
 object ModCreativeModeTabs {
@@ -24,27 +27,46 @@ object ModCreativeModeTabs {
             FabricCreativeModeTab.builder()
                 .title(Component.translatable("itemGroup.carpeted-mod.carpeted_blocks"))
                 .icon {
-                    val iconBlock = ModBlocks.slabsByBase.values.firstOrNull()
+                    val iconBlock = ModBlocks.slabsByBase.values.firstOrNull(::isVisibleInTab)
                     if (iconBlock != null) {
                         CarpetedItemStacks.create(iconBlock, DyeColor.RED, CarpetSurface.TOP)
                     } else {
-                        net.minecraft.world.item.ItemStack.EMPTY
+                        ItemStack.EMPTY
                     }
                 }
                 .displayItems { _, output ->
-                    ModBlocks.slabsByBase.values.forEach { block ->
-                        DyeColor.entries.forEach { color ->
-                            output.accept(CarpetedItemStacks.create(block, color, CarpetSurface.TOP))
-                        }
-                    }
-
-                    ModBlocks.stairsByBase.values.forEach { block ->
-                        DyeColor.entries.forEach { color ->
-                            output.accept(CarpetedItemStacks.create(block, color, CarpetSurface.TREAD))
-                        }
-                    }
+                    addVisibleBlocks(output, ModBlocks.slabsByBase.values, CarpetSurface.TOP)
+                    addVisibleBlocks(output, ModBlocks.stairsByBase.values, CarpetSurface.TREAD)
                 }
                 .build()
         )
+    }
+
+    private fun addVisibleBlocks(
+        output: CreativeModeTab.Output,
+        blocks: Collection<CarpetedBlock>,
+        surface: CarpetSurface
+    ) {
+        for (block in blocks) {
+            if (!isVisibleInTab(block)) {
+                continue
+            }
+
+            for (color in DyeColor.entries) {
+                output.accept(carpetedStack(block, color, surface))
+            }
+        }
+    }
+
+    private fun isVisibleInTab(block: CarpetedBlock): Boolean {
+        return !block.block().defaultBlockState().`is`(ModBlockTags.HIDE_FROM_CARPETED_TAB)
+    }
+
+    private fun carpetedStack(block: CarpetedBlock, color: DyeColor, surface: CarpetSurface): ItemStack {
+        return CarpetedItemStacks.create(block.block(), color, surface)
+    }
+
+    private fun CarpetedBlock.block(): Block {
+        return this as Block
     }
 }

@@ -21,11 +21,10 @@ import net.minecraft.world.phys.shapes.VoxelShape
 import us.mathewtech.item.CarpetedItemStacks
 import us.mathewtech.util.CarpetedDropUtil
 
-class CarpetedStairBlock(
+open class CarpetedStairBlock(
     override val baseBlock: StairBlock,
     properties: Properties
 ) : StairBlock(baseBlock.defaultBlockState(), properties), CarpetedBlock {
-
     companion object {
         val CARPET: EnumProperty<DyeColor> = EnumProperty.create("carpet", DyeColor::class.java)
         val CARPET_SURFACE: EnumProperty<CarpetSurface> = EnumProperty.create("carpet_surface", CarpetSurface::class.java)

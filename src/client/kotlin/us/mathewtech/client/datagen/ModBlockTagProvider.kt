@@ -7,6 +7,7 @@ import net.minecraft.core.registries.BuiltInRegistries
 import net.minecraft.tags.BlockTags
 import net.minecraft.tags.TagKey
 import net.minecraft.world.level.block.Block
+import us.mathewtech.registry.ModBlockTags
 import us.mathewtech.registry.ModBlocks
 import java.util.concurrent.CompletableFuture
 
@@ -19,6 +20,35 @@ class ModBlockTagProvider(
             ModBlocks.slabsByBase.forEach { (base, carpeted) -> add(base to carpeted) }
             ModBlocks.stairsByBase.forEach { (base, carpeted) -> add(base to carpeted) }
         }
+        val baseSlabs = ModBlocks.slabsByBase.keys
+            .mapNotNull { BuiltInRegistries.BLOCK.getResourceKey(it).orElse(null) }
+            .toTypedArray()
+        val baseStairs = ModBlocks.stairsByBase.keys
+            .mapNotNull { BuiltInRegistries.BLOCK.getResourceKey(it).orElse(null) }
+            .toTypedArray()
+        val baseBlocks = (ModBlocks.slabsByBase.keys + ModBlocks.stairsByBase.keys)
+            .mapNotNull { BuiltInRegistries.BLOCK.getResourceKey(it).orElse(null) }
+            .toTypedArray()
+        val carpetedSlabs = ModBlocks.slabsByBase.values
+            .mapNotNull { BuiltInRegistries.BLOCK.getResourceKey(it).orElse(null) }
+            .toTypedArray()
+        val carpetedStairs = ModBlocks.stairsByBase.values
+            .mapNotNull { BuiltInRegistries.BLOCK.getResourceKey(it).orElse(null) }
+            .toTypedArray()
+        builder(ModBlockTags.SUPPORTED_BASE_SLABS).add(*baseSlabs)
+        builder(ModBlockTags.SUPPORTED_BASE_STAIRS).add(*baseStairs)
+        builder(ModBlockTags.SUPPORTED_BASE_BLOCKS).add(*baseBlocks)
+        builder(ModBlockTags.CARPETED_SLABS).add(*carpetedSlabs)
+        builder(ModBlockTags.CARPETED_STAIRS).add(*carpetedStairs)
+        builder(ModBlockTags.CARPETED_BLOCKS)
+            .forceAddTag(ModBlockTags.CARPETED_SLABS)
+            .forceAddTag(ModBlockTags.CARPETED_STAIRS)
+
+        builder(ModBlockTags.DISABLE_CARPETING)
+        builder(ModBlockTags.DISABLE_RECOLORING)
+        builder(ModBlockTags.DISABLE_REMOVAL)
+        builder(ModBlockTags.DISABLE_SILK_TOUCH_PRESERVATION)
+        builder(ModBlockTags.HIDE_FROM_CARPETED_TAB)
 
         MIRRORED_TAGS.forEach { tag ->
             val taggedBlocks = pairs

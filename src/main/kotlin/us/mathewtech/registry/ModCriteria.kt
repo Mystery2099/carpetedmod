@@ -7,13 +7,10 @@ import net.minecraft.server.level.ServerPlayer
 import us.mathewtech.CarpetedMod
 
 object ModCriteria {
-    private val APPLIED_CARPET = register("applied_carpet")
-    private val DYED_CARPET = register("dyed_carpet")
-    private val REMOVED_CARPET = register("removed_carpet")
-    private val SILK_TOUCHED_CARPETED_BLOCK = register("silk_touched_carpeted_block")
-
-    fun initialize() {
-    }
+    val APPLIED_CARPET: PlayerTrigger = register("applied_carpet")
+    val DYED_CARPET: PlayerTrigger = register("dyed_carpet")
+    val REMOVED_CARPET: PlayerTrigger = register("removed_carpet")
+    val SILK_TOUCHED_CARPETED_BLOCK: PlayerTrigger = register("silk_touched_carpeted_block")
 
     fun appliedCarpet(player: ServerPlayer) {
         APPLIED_CARPET.trigger(player)
